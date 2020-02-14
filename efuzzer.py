@@ -8,6 +8,8 @@ found here.
 Refer to sqlmap's sqlmap.py
 """
 
+from inputParser import cmdParser
+
 def getProgramPath():
     """
     Get E-Fuzzer's directory
@@ -31,7 +33,8 @@ def main():
     """
     Main function of E-Fuzzer when running from command line.
     """
-    pass
+    args = cmdParser()
+    print("ARGUMENTS: ", args)
 
 if __name__ == "__main__":
     main()
