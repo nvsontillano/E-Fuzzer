@@ -9,6 +9,7 @@ Refer to sqlmap's sqlmap.py
 """
 
 from inputParser import cmdParser
+from UserInput import UserInput
 
 def getProgramPath():
     """
@@ -33,8 +34,10 @@ def main():
     """
     Main function of E-Fuzzer when running from command line.
     """
-    args = cmdParser()
-    print("ARGUMENTS: ", args)
+    items, values = cmdParser()
+    data = UserInput(items, values)
+    print("ARGUMENTS: ", items, values)
+    print('data.url', data.url, 'data.data', data.data)
 
 if __name__ == "__main__":
     main()

@@ -65,4 +65,10 @@ def cmdParser():
     # Call parsing method
     (args, _) = parser.parse_known_args(argv) if hasattr(parser, "parse_known_args") else parser.parse_args(argv)
 
-    return args
+    items = []
+    values = []
+    for arg in vars(args):
+        items.append(arg) 
+        values.append(getattr(args, arg))
+    
+    return items, values
