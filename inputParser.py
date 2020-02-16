@@ -11,12 +11,14 @@ OPTIONS = (
     "data",
     "cookie",
     "port",
-    "user",
-    "password",
+    "basicAuth",
     "method",
     "static",
     "file",
 )
+
+def cmdPrompt():
+    pass
 
 """
 This function parses the command line parameters and arguments
@@ -35,8 +37,6 @@ def cmdParser():
     # Create the parser    
     usage = "%s%s [options]" % ("%s " % os.path.basename(sys.executable) if not IS_WIN else "", "\"%s\"" % _ if " " in _ else _)
     parser = ArgumentParser(usage=usage)
-
-    parser.add_argument("--h", dest="help", action="store_true", help="Show help message and exit")
 
     # Target options
     target = parser.add_argument_group("Target", "This has to be provided to define the target(s)")
@@ -58,9 +58,12 @@ def cmdParser():
 
     injection.add_argument("--file", dest="file", help="Filename of file with input strings")
 
-    # If --url is not used  
-    if re.search(r"\A(http|www\.|\w[\w.-]+\.\w{2,})", argv[1]) is not None:
-        argv[1] = "--url=%s" % argv[1]
+    # If --url is not used 
+    try:
+        if re.search(r"\A(http|www\.|\w[\w.-]+\.\w{2,})", argv[1]) is not None:
+            argv[1] = "--url=%s" % argv[1]
+    except IndexError:
+        pass
     
     # Call parsing method
     (args, _) = parser.parse_known_args(argv) if hasattr(parser, "parse_known_args") else parser.parse_args(argv)
