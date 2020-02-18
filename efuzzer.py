@@ -13,7 +13,8 @@ import os
 import sys
 from inputParser import cmdParser
 from UserInput import UserInput
-#from request import Request, HTTP_HEADER
+from payload import Payload
+from request import Request
 
 """
 Check Python version
@@ -49,11 +50,26 @@ def main():
     """
     if checkPyVer():
         items, values = cmdParser()
-        print("ARGUMENTS: ", items, values)
 
         data = UserInput(items, values)
         if data.checkOptions():
-            print("proceed to forming request")
+            payload = Payload(data.file)
+            request = Request()
+
+            request.forgeHeaders(data.cookie, data.basicAuth)
+            request.setData(data.data, data.static)
+            request.setMethod(data.method)
+            
+            _ = payload.getNextPayload() 
+            while _:
+                if data.isUrlWildcard():
+                    request.setUrl(data.url, _)
+                else:
+                    request.setUrl(data.url)
+
+                request.setWildcardData(_)
+                request.sendRequest()
+                _ = payload.getNextPayload() 
 
 if __name__ == "__main__":
     main()
