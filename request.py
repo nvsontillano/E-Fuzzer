@@ -53,7 +53,6 @@ class Request():
                 staticIndex.append(int(_.strip())-1)
 
         for index, value in enumerate(data.split(';')):
-            print('value: ', value)
             _ = value.split('=')
             if index in staticIndex:
                 self.data[_[0].strip()] = _[1].strip()

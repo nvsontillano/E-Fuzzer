@@ -1,3 +1,7 @@
+"""
+Parse command line arguments
+"""
+
 import os
 import re
 import sys
@@ -17,18 +21,14 @@ OPTIONS = (
     "file",
 )
 
-def cmdPrompt():
-    pass
-
 """
-This function parses the command line parameters and arguments
+This function parses the command line arguments
 """
-def cmdParser():
+def parser():
     # Get arguments from command line
     argv = sys.argv
 
     _ = os.path.basename(argv[0])
-    print(_)
 
     # OS of the machine
     PLATFORM = os.name
@@ -54,7 +54,7 @@ def cmdParser():
     request.add_argument("--basicAuth", dest="basicAuth", help="HTTP Basic authentication credentials (name:password)")
 
     # Injection options
-    injection = parser.add_argument_group("Injection", "These options can be used to specify which parameters to test for, provide custom injection payloads and optional tampering scripts")
+    injection = parser.add_argument_group("Injection", "These options can be used to provide custom injection payloads")
 
     injection.add_argument("--file", dest="file", help="Filename of file with input strings")
 
@@ -64,14 +64,14 @@ def cmdParser():
             argv[1] = "--url=%s" % argv[1]
     except IndexError:
         pass
+        # WHAT TO DO HERE
     
     # Call parsing method
     (args, _) = parser.parse_known_args(argv) if hasattr(parser, "parse_known_args") else parser.parse_args(argv)
 
-    items = []
-    values = []
+    _ = {}
     for arg in vars(args):
-        items.append(arg) 
-        values.append(getattr(args, arg))
+        _[arg] =  getattr(args, arg)
     
-    return items, values
+    return _
+

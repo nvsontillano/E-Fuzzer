@@ -11,28 +11,17 @@ Refer to sqlmap's sqlmap.py
 import inspect
 import os
 import sys
-from inputParser import cmdParser
-from UserInput import UserInput
-from payload import Payload
+
+from dependency import checkPyVersion
+from cmd import parser
+from Input import Input
 from request import Request
+# from inputParser import cmdParser
+# from UserInput import UserInput
+# from payload import Payload
+# from request import Request
+# from payload import getList
 
-"""
-Check Python version
-"""
-def checkPyVer():
-    # Must be using at least Python 3
-    if sys.version_info[0] < 3:
-        print("Must be using Python 3")
-        return False
-    
-    return True
-
-"""
-Check if all dependencies are installed. If not, provide an 
-instruction to install the missing dependencies.
-"""
-def checkDependencies():
-    pass
 
 """
 Print E-Fuzzer's description
@@ -43,33 +32,34 @@ def printFuzzerDescription():
         for an undergraduate class. \n \n \
         Use --help or --h to view available options.')
 
-
 def main():
     """
-    Main function of E-Fuzzer when running from command line.
+    Main function of E-Fuzzer.
     """
-    if checkPyVer():
-        items, values = cmdParser()
+    checkPyVersion()
+    args = parser()
+    inputs = Input(args)
+    inputs.checkOptions()
 
-        data = UserInput(items, values)
-        if data.checkOptions():
-            payload = Payload(data.file)
-            request = Request()
+    request = Request()
+    request.forgeHeaders(inputs.cookie, inputs.basicAuth)
+    request.setData(inputs.data, inputs.static)
+    request.setMethod(inputs.method)
 
-            request.forgeHeaders(data.cookie, data.basicAuth)
-            request.setData(data.data, data.static)
-            request.setMethod(data.method)
-            
-            _ = payload.getNextPayload() 
-            while _:
-                if data.isUrlWildcard():
-                    request.setUrl(data.url, _)
-                else:
-                    request.setUrl(data.url)
+    stringList = Payload(data.file)
+    responses = {}
 
-                request.setWildcardData(_)
-                request.sendRequest()
-                _ = payload.getNextPayload() 
+    for string in stringList:
+        if input.isUrlWildcard():
+            request.setUrl(inputs.url, string)
+        else:
+            request.setUrl(inputs.url)
+
+        request.setWildcardData(string)
+        response = request.sendRequest()
+        # code here to output other info 
+        responses[string] = response
+
 
 if __name__ == "__main__":
     main()

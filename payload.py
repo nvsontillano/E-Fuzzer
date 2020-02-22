@@ -1,16 +1,19 @@
-DEFAULT_FILE = ''
+SQLIDEFAULTFILE = ''
+XSSDEFAULTFILE = ''
 
 """
 Class for the malicious input strings
 """
 class Payload():
-    payloadList = []
+    sqliStringList = []
+    xssStringList = []
+    stringList = []
 
     """
     If user provided a file of input strings, use
     it; if not, use the default file
     """
-    def __init__(self, file):
+    def __init__(self, file=None):
         if file:
             self.getListFromFile(file)
         else:
@@ -21,11 +24,7 @@ class Payload():
     them into a list
     """
     def getListFromFile(self, file):
-        pass
+        stringList = [line.rstrip('\n') for line in open(file)]
 
-    """
-    Get the next string to be sent from 
-    the payload list
-    """
-    def getNextPayload(self):
-        return 1
+    def getList(self):
+        return self.stringList
