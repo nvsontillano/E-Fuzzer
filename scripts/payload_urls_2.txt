@@ -1,0 +1,14 @@
+https://raw.githubusercontent.com/tennc/fuzzdb/master/dict/BURP-PayLoad/UNION%20SELECT/basic-vuln-column-check.txt
+https://raw.githubusercontent.com/tennc/fuzzdb/master/dict/BURP-PayLoad/UNION%20SELECT/basic-plus-vuln-column-check.txt
+https://raw.githubusercontent.com/tennc/fuzzdb/master/dict/BURP-PayLoad/UNION%20SELECT/basic-plus--NULL-vuln-column-check.txt
+https://raw.githubusercontent.com/tennc/fuzzdb/master/dict/BURP-PayLoad/UNION%20SELECT/basic-comment-vuln-column-check.txt
+https://raw.githubusercontent.com/tennc/fuzzdb/master/dict/BURP-PayLoad/UNION%20SELECT/basic-comment-NULL-vuln-column-check.txt
+https://raw.githubusercontent.com/tennc/fuzzdb/master/dict/BURP-PayLoad/UNION%20SELECT/basic-NULL-vuln-column-check.txt
+https://raw.githubusercontent.com/1N3/IntruderPayloads/master/FuzzLists/sqli-time-based.txt
+https://raw.githubusercontent.com/1N3/IntruderPayloads/master/FuzzLists/sqli-union-select.txt
+https://raw.githubusercontent.com/foospidy/payloads/master/other/sqli/d0znpp.txt
+https://raw.githubusercontent.com/foospidy/payloads/master/other/sqli/libinjection-bypasses.txt
+https://raw.githubusercontent.com/foospidy/payloads/master/other/sqli/sqlifuzzer.txt
+https://raw.githubusercontent.com/foospidy/payloads/master/owasp/jbrofuzz/sqli.txt
+https://raw.githubusercontent.com/client9/libinjection/master/data/sqli-misc.txt
+
