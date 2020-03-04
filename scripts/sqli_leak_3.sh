@@ -21,11 +21,16 @@ count=0
 
 while read line;
 do
-	for value in $(iconv -l | tail -n+5 | sed "s/\/\///g"); 
+	for value in $(iconv -l |  sed "s/\/\///g"); 
 	do 
 		echo [*] - $value; 
 
-		to_send=$(echo -e "$line" | iconv -t $value); 
+		#to_send=$(echo -e "$line" | iconv -t "$value"); 
+		to_send=$(echo -e "$line" | iconv -t "$value");
+		continue
+
+		to_send=$(echo $to_send | ~/thesis/E-Fuzzer/scripts/urlencoder );
+		#to_send=$(echo -e "$line" | iconv -t ISO2022KR); 
 		echo $to_send > /tmp/tmp;
 
 		while read temp;
@@ -48,9 +53,6 @@ do
 			result=$(curl "$URL/?$to_send" --cookie "$cookie" | wc -c);
 		fi
 
-		#sleep 0.5;
-
-
 		echo $result;	
 	
 		if [[ $result != $normal_count ]];
@@ -61,6 +63,7 @@ do
 			echo "" - >> $output_file; 
 			let count=$count+1
 		fi 
+		
 	done 
 done < $filename
 

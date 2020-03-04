@@ -7,21 +7,21 @@ encoder_file = sys.argv[2]
 
 encoder_list = {}
 
-with open(encoder_file, "r") as rf:
+with open(encoder_file, "rb") as rf:
 	contents = rf.read()
 
-	contents = contents.split('\n')
+	contents = contents.split(b'\n')
 	for item in contents:
 		encoder_list[item] = 0
 
-with open(result_file, "r") as rf:
+with open(result_file, "rb") as rf:
 	contents = rf.read()
 
 #print(encoder_list)
 
 for key in encoder_list.keys():
 	
-	occurence = len(re.findall(" "+key+"\n", contents))
+	occurence = len(re.findall(b" "+key+b"\n", contents))
 
 	encoder_list[key] = occurence
 	#print("[*] {} : {} worked".format(key, occurence))
