@@ -41,3 +41,5 @@ do
 	
 done
 
+# Compressing and emailing
+./zip_and_email.sh "$test_name"

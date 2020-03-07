@@ -1,6 +1,7 @@
 import requests
 import sys
 import itertools  
+import time
 try:
     from urllib.parse import urlparse
 except ImportError:
@@ -30,6 +31,7 @@ success_counter = 0
 
 BUFFER_SIZE = 10
 
+start_time = time.time()
 # URL Encode and send each payload 
 for i in contents:
 	encoded = urlparse.quote(i)
@@ -49,10 +51,12 @@ for i in contents:
 #		print(response.request.url)
 #		print(response.text)
 
+time_run = time.time() - start_time
 # Write the results to a file
-with open(output_file, 'w+') as rf:
+with open(output_file, 'w') as rf:
 	for i, j, k in zip(success_payloads, success_url, success_response_len):
 		rf.write(i + '\n')
 		rf.write('\t' + j + '\n')
 		rf.write('\t' + k + '\n\n')
 	rf.write(str(success_counter) + ' worked\n')
+	rf.write("[*] Runtime: {}".format(time_run))
